@@ -1,0 +1,875 @@
+/*
+Theme Name: modaemquadro
+Theme URI: http://www.modaemquadro.com.br
+Description: Tema desenvolvido por Diogo Soares
+Author: Diogo Soares
+Author URI: http://mmmoda.com.br
+Version: 1.0
+*/
+
+    /*================================GLOBAL================*/
+
+/*====FONTS=====*/
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTaOCaDZZVv73zpFSwE4Va2k.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTdWlIHla9B101mdmTHF3-q0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTVMRqIICSqEqsEoDxn8ddME.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTaWHppw2c1XOp6B2yhU8z7c.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTeji7H8UD0RUWSM-55zrR4g.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTcw0n1X1lV_hRH3yZFpIE9Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTSYtBUPDK3WL7KRKS_3q7OE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/K88pR3goAWT7BTt32Z01m5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/RjgO7rYTmqiVp7vzi-Q5UZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/ttwNtsRpgsxVmgGGmiUOEpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/LWCjsQkB6EMdfHrEVqA1KZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/xozscpT2726on7jbcb_pApBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/59ZRklaO5bWGqF5A9baEEZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/u-WUoqrET9fUeobQW7jkRZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqOCaDZZVv73zpFSwE4Va2k.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNStWlIHla9B101mdmTHF3-q0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSlMRqIICSqEqsEoDxn8ddME.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqWHppw2c1XOp6B2yhU8z7c.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSuji7H8UD0RUWSM-55zrR4g.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSsw0n1X1lV_hRH3yZFpIE9Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSiYtBUPDK3WL7KRKS_3q7OE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKOCaDZZVv73zpFSwE4Va2k.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzNWlIHla9B101mdmTHF3-q0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzFMRqIICSqEqsEoDxn8ddME.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKWHppw2c1XOp6B2yhU8z7c.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOji7H8UD0RUWSM-55zrR4g.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzMw0n1X1lV_hRH3yZFpIE9Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzCYtBUPDK3WL7KRKS_3q7OE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xE6du99w8ONfQrOf4kprgAx_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xK8wKBk9M_9zvJF5T73CXCh_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xJ14gK-0unzMDfuYl-aQUV9_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xB5VLgeZEtrtjc2zP-H3k9d_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xAWz7bTsodKOChnd4npPWzF_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xD_0YkshJ_UyXEU-Q7eV4G5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5x_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPX7z5o44AuUJ1t1avdkNXJ_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xLLF6RfyvCYuuChpfFHKAr5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIbCcO5IWJIaQ5MtZqYsHUp_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xHQ3DnTiPFZC1qn696_nOv9_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xLzZT6Zu7Z-BZJGL0hT-UJV_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPJmhJzg6kSQTtrFMk-8lT5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DF_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+/*====FONTS - FIM=====*/
+
+*{margin:0; padding:0;}
+    html,body, input, select{
+        font-family: 'Open sans', sans-serif;
+        font-size:13px;
+        color:#999999;
+    }
+    a{
+        color:#444444;
+        text-decoration:none;
+    }
+    
+   
+    /*=========CONTAINERS=======*/
+    .globalContainer{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+    .container{
+        position:relative;
+        width:100%;
+    }
+    .rContainer{
+        position:relative;
+        margin:0 auto;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    /*=========CONTAINERS-FIM=======*/
+    
+    /*=========HEADER=======*/
+    
+    .header{
+        position:relative;
+        width:100%;
+        height:137px;
+    }
+    .header .julianaFoto{
+      position:absolute;
+      z-index:1;
+      width:180px;
+      height:210px;
+      right:0;
+      top:0;
+      border:0;
+    }
+    
+    .header .socialMediaBar{
+      position:relative;
+      display:block;
+      list-style:none;
+      margin:0;
+      padding:0;
+      float:left;
+      height:55px;
+    }
+    
+    .header .socialMediaBar > li{
+      position:relative;
+      display:inline-block;
+      margin:0 10px 0 0;
+      padding:0;
+      float:left;
+      width:auto;
+      background:url('images/dotedVertical.png') repeat-y center;
+    }
+    
+    .header .socialMediaBar > li a{
+      position:relative;
+      display:block;
+      padding:0;
+      height:22px;
+    }
+    
+    .header .socialMediaBar > li.facebook a{
+      background:url('images/img_all.png') no-repeat 0 0;
+      width:12px;
+      margin-top:25px;
+    }
+    
+    .header .socialMediaBar > li.instagram a{
+      background:url('images/img_all.png') no-repeat -22px 0;
+      width:23px;
+      margin-top:33px;
+    }
+    
+    .header .socialMediaBar > li.youtube a{
+      background:url('images/img_all.png') no-repeat -55px 0;
+      width:31px;
+      margin-top:16px;
+    }
+    
+    .header .socialMediaBar > li.twitter a{
+      background:url('images/img_all.png') no-repeat -96px 0;
+      width:27px;
+      margin-top:29px;
+    }
+    
+    .header .socialMediaBar > li.gplus a{
+      background:url('images/img_all.png') no-repeat -133px 0;
+      width:22px;
+      margin-top:23px;
+    }
+   
+   
+   .header .logotipo{
+    position:absolute;
+    display:block;
+    left:50%;
+    top:0;
+    margin:0 0 0 -110px;
+    text-align:center;
+    width:200px;
+    height:204px;
+    z-index:10;
+    background:#FFFFFF;
+    }
+    
+    .header .logotipo a{
+    position:relative;
+    display:block;
+    text-align:center;
+    width:175px;
+    height:120px;
+    margin:40px 0 0 15px;
+    }
+    
+    .header .logotipo a img{
+    position:relative;
+    width:175px;
+    height:120px;
+    }
+    
+    .header .logotipo:after{
+    position:absolute;
+    display:block;
+    width:170px;
+    height:3px;
+    bottom:-3px;
+    left:15px;
+    background:#FFFFFF;
+    content:"";
+    z-index:11;
+    }
+    
+    .header .contentRight{
+      position:relative;
+      display:block;
+      float:right;
+      top:40px;
+      right:180px;
+      height:90px;
+    }
+    
+    .header .contentRight .contact{
+      position:relative;
+      display:block;
+      height:14px;
+      width:100%;
+      margin:0 0 22px 0;
+      text-align:right;
+    }
+    
+    .header .contentRight .contact a{
+      position:relative;
+      display:inline-block;
+      font-size:13px;
+      line-height:13px;
+      color:#000000;
+      font-family:Georgia;
+    }
+    .header .contentRight .contact a:after{
+      position:relative;
+      display:inline-block;
+      width:18px;
+      height:14px;
+      float:right;
+      margin:0 0 0 10px;
+      content:"";
+      background:url('images/img_all.png') no-repeat -386px 0;
+    }
+   
+   .header .contentRight .search{
+    position:relative;
+    display:block;
+    width:100%;
+    height:31px;
+   }
+   
+   .header .contentRight .search .keyword{
+    position:relative;
+    display:inline-block;
+    float:right;
+    height:31px;
+    padding:0 7px 0 4px;
+    border:none;
+    background:url('images/serachInputBg.png') no-repeat right;
+    font-size:11px;
+    text-transform:uppercase;
+    color:#000000;
+   }
+   
+    .header .contentRight .search:before{
+    position:absolute;
+    display:block;
+    width:1px;
+    height:31px;
+    content:'';
+    background:url('images/img_all.png') no-repeat -799px 0;
+    z-index:11;
+    top:0;
+    left:1px;
+   }
+   
+   .header .contentRight .search .submit{
+    position:relative;
+    display:inline-block;
+    float:right;
+    width:16px;
+    height:16px;
+    margin:7px 0 0 3px;
+    border:0;
+    background:url('images/img_all.png') no-repeat -317px 0;
+    cursor:pointer;
+   }
+   
+   
+    
+    /*=========HEADER-FIM=======*/
+    /*=========NAV=======*/
+    .nav{
+        position:relative;
+        width:100%;
+        height:67px;
+        display:block;
+        margin:0;
+        border-top:1px dotted #000000;
+        border-bottom:6px solid #000000;
+        z-index:9;
+    }
+    
+    .nav .mainMenu{
+      position:relative;
+      display:inline-block;
+      list-style:none;
+      margin:16px 0 0 0;
+      padding:0;
+      height:34px;
+      width:50%;
+    }
+    
+    .nav .mainMenu.left{
+      float:left;
+      text-align:left;
+    }
+    
+    .nav .mainMenu.right{
+      float:right;
+      text-align:right;
+    }
+    
+    .nav .mainMenu li.item{
+      position:relative;
+      display:inline-block;
+      height:34px;
+      margin-right:0;
+    }
+    
+    .nav .mainMenu li.item.last{
+      margin-right:0;
+    }
+    
+    .nav .mainMenu li.item a{
+      position:relative;
+      display:block;
+      height:34px;
+      line-height:34px;
+      font-size:13px;
+      font-weight:lighter;
+      color:#000000;
+      text-align:center;
+      background: rgba(255, 255, 255, 0.70);
+      padding:0 10px 0 10px;
+      margin:0;
+    }
+   
+    
+    /*=========NAV-FIM=======*/
+    
+    /*=========SLIDER=======*/
+    
+   
+    /*=========SLIDER - FIM=======*/
+    
+    /*=========FOOTER=======*/
+   
+    /*=========FOOTER-FIM=======*/
+    
+    
+    .mainContent .colls{
+        position:relative;
+        display:table;
+        width:100%;
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    
+    .mainContent .colls-4 .coll{
+        position:relative;
+        display:inline-block;
+        float:left;
+        width:22.4576271%;
+        margin-right:3.38983051%;
+    }
+    
+    .mainContent .colls-4 .last,
+    .mainContent .colls-4 .coll:nth-child(4n) {
+      margin-right:0;
+    }
+    
+    /*================================ GLOBAL - FIM ================*/
+    
+    /*================================ HOME ================*/
+    
+    /*=========HEANDER=======*/
+    .home .header{
+        
+    }
+    .home .header .logotipo{
+        text-align:center;
+    }
+    
+    
+     .home .header .searchTop{
+        
+    }
+    
+    
+  
+    /*=========HEANDER - FIM=======*/
+    
+  
+    /*================================ HOME - FIM ===============*/
+    /*================================ PAGES GLOBAL ===============*/
+    .page{}
+    /*=========HEADER=======*/
+    .page .header{
+        height:205px;
+    }
+
+    .page .header .logotipo{
+        position:relative;
+        display:inline-block;
+        text-align:left;
+        float:left;
+        margin:30px 0 0 0;
+    }
+    
+    
+     .page .header .searchTop{
+        float:right;
+        margin:53px 0 0 0;
+    }
+
+
+    /*=========HEADR-FIM=======*/
+    
+    /*=======GLOBAL INTERNAS======*/
+    
+    
+    
+    /*=======GLOBAL INTERNAS- FIM======*/
+
+    /*============ breadcrumbs ===========*/
+    .mainContent .headerSession {
+        position:relative;
+        display:block;
+        width:100%;
+        background:#EEEEEE;
+    }
+    
+    
+    .mainContent .headerSession:before{
+        position:absolute;
+        width:16px;
+        height:7px;
+        bottom:-7px;
+        left:50%;
+        margin:0 0 0 -8px;
+        content:"";
+    }
+
+    
+    .mainContent .headerSession h1{
+        position:relative;
+        display:inline-block;
+        width:auto;
+        margin:0;
+        padding:0 0 0 50px;
+        font-weight:300;
+    }
+    
+    .mainContent .breadcrumbs:before{
+        background:url('images/img_all.png') no-repeat -1584px 0;
+    }
+    .mainContent .breadcrumbs h1{
+        color:#444444;
+    }
+    
+    .mainContent .headerSession h1:before{
+        position:absolute;
+        width:50px;
+        height:40px;
+        top:32px;
+        left:0;
+        content:"";`
+    .mainContent .headerSession .description .bigText{
+        position:relative;
+        display:inline-block;
+        float:right;
+        width:auto;
+        margin:0 10px 0 0;
+        font-size:30px;
+        color:#444444;
+    }
+    
+    .mainContent .headerSession .description .text{
+        position:relative;
+        display:inline-block;
+        float:right;
+        width:auto;
+        margin:0 10px 0 0;
+        font-size:13px;
+        color:#444444;
+    }
+    
+    .mainContent .headerSession .description .button{
+        position:relative;
+        display:inline-block;
+        width:auto;
+        height:35px;
+        float:right;
+        width:auto;
+        margin:30px 0 0 0;
+        text-align:center;
+        padding:0 40px 0 40px;
+        line-height:35px;
+        font-weight:100;
+    }
+    
+    .marcas .headerSession .description .button{
+        background:#444444;
+        border:1px solid #444444;
+        color:#FFFFFF;
+    }
+    
+    .marcas .headerSession .description .button:hover{
+        background:none;
+        border:1px solid #444444;
+        color:#444444;
+    }
+    
+    
+    
+    .mainContent .contentSession{
+        position:relative;
+        display:block;
+    }
+    
+    .marcas .headerSession h1:before{
+        background:url('images/img_all.png') no-repeat -1260px 0;
+    }
+    
+    /*============ breadcrumbs FIM ===========*/
+    
+    /*===============NAV=========*/
+    
+     .page .nav ul.options li.option{
+        
+    }
+    /*===============NAV - FIM ===================*/
+    
+    .page .footer{
+        border-top:1px solid #DDDDDD;
+        margin:60px 0 0 0;
+    }
+    /*================================ PAGES GLOBAL - FIM ===============*/
+   

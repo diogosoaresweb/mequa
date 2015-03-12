@@ -1,0 +1,202 @@
+/*
+Description: Resposivo
+Author: Diogo Soares
+Author URI: http://www.diogosoares.com.br
+Version: 1.0
+
+Resoluções:
+1200px
+960px
+768px
+480px
+320px
+*/
+
+
+/*Descktop Notebook*/
+@media only screen and (min-width:1200px) {
+        
+        .rContainer{
+        width:1000px;
+        }
+        
+	.header .contentRight{
+      width:210px;
+    }
+   
+   .header .contentRight .search .keyword{
+    width:177px;
+   }
+        
+}
+
+/*NetBook and DesckTop*/
+@media only screen and (min-width:960px) and (max-width:1199px) {
+     
+        .rContainer{
+                width:940px;
+        }
+        
+        
+        .header .contentRight{
+      width:180px;
+    }
+   
+   .header .contentRight .search .keyword{
+    width:147px;
+   }
+   
+}
+
+/*min netbook*/
+@media only screen and (min-width:960px) {
+        
+        .rContainer{
+        
+        }
+        /*
+         a:hover{
+		
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		
+        }
+	*/
+	.header .socialMediaBar > li a:hover{
+      background-position-y:-41px;
+      
+    }
+    .header .contentRight .contact a:hover{
+	text-decoration:underline;
+    }
+    .header .contentRight .contact a:hover:after{
+     background-position-y:-22px;
+    }
+        
+.nav .mainMenu li.item a:hover{
+      background: rgba(255, 255, 255, 1);
+      -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    }
+
+     
+    
+    
+/*=====================HEADER===================*/
+
+	
+	
+
+
+}
+
+
+/*max Tablet*/
+@media only screen and (max-width:959px) {
+        
+        .rContainer{
+        width:100%;
+        }
+}
+
+/*Tablet and NetBook*/
+@media only screen and (min-width:768px) and (max-width:959px) {
+        
+        
+        
+        
+	/*=========HEADER=======*/
+    
+    .header{
+        
+    }
+    
+	
+	/*=========LOGO=======*/
+        .home .header .logotipo{
+		
+    }
+	/*=========LOGO-FIM=======*/
+    
+    
+    
+   
+   
+    /*=========HEADER-FIM=======*/
+    
+    
+}
+/*min Tablet and NetBook*/
+@media only screen and (min-width:768px){
+        
+        
+}
+/*max Tablet*/
+@media only screen and (max-width:767px){
+        
+        
+/*=========HEADER=======*/
+    
+    /*=========HEANDER=======*/
+    .home .header{
+        
+    }
+  
+	
+	
+   /*=========LOGO=======*/
+    .home .header .logotipo{
+       
+    }
+	/*=========LOGO- FIM=======*/
+    
+    /*=========HEADER-FIM=======*/
+	
+	.marcas .genders .gender a .title{
+        
+        }
+    
+        .marcas .genders .gender a .title span{
+        
+         }
+        
+}
+/*smartPhone and NetBook*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+        
+        
+}
+/*min SmartPhone*/
+@media only screen and (min-width:480px){
+        
+        
+}
+/*max SmartPhone*/
+@media only screen and (max-width:479px){
+        
+        
+/*=========HEADER=======*/
+    
+    .header{
+        
+    }
+    
+  
+    
+    /*=========HEADER-FIM=======*/
+	
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+        
+        
+}
+
+@media only screen and (max-width:319px){
+        
+        
+}
