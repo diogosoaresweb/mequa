@@ -338,7 +338,7 @@ Version: 1.0
       padding:15px;
       border:1px solid #DDDDDD;
       top:35px;
-      z-index:6;
+      z-index:1001;
       display:none;
       width:auto !important;
       overflow:visible;
@@ -474,6 +474,7 @@ Version: 1.0
     margin:0 0 40px 0;
     padding:0;
     background:#DDDDDD;
+    z-index: 1;
    }
    .pages .slider .rContainer{
     height:100% !important;
@@ -1229,4 +1230,37 @@ Version: 1.0
     display: none !important;
    }
    
-   /*======PALEATIVOS FIM=======*/
+    .slider{
+    overflow: hidden !important;
+   }
+   
+   .huge_it_slideshow_image_second_item_1 a,
+   .huge_it_slideshow_image_item_1 a {
+        overflow: hidden !important;
+        position: relative !important;
+    }
+    
+    
+    .huge_it_slideshow_image_wrap_1,
+   .huge_it_slideshow_image_wrap1_1,
+   .huge_it_slideshow_image_container_1{
+    width: 100% !important;
+   }
+
+
+    .huge_it_slideshow_title_text_1,
+    .huge_it_slideshow_description_text_1{
+        display: none !important;
+    }
+
+
+    .huge_it_slideshow_image_second_item_1 a img.huge_it_slideshow_image_1,
+    .huge_it_slideshow_image_item_1 a img.huge_it_slideshow_image_1 {
+        position: absolute !important;
+        left: 50% !important;
+        top: 0 !important;
+    }
+       
+   /*====== PALEATIVOS - FIM =======*/
+   
+   
