@@ -686,14 +686,15 @@ Version: 1.0
    }
    
    
-   .pages .content .main  .block .more{
+   .pages .content  .block .more{
     position:relative;
     display:block;
     background:url('images/lineHorizCinza.png') repeat-x center;
     margin:10px 0 0 0;
     }
     
-   .pages .content .main .block .more .link-more{
+  
+   .pages .content .block .more .link-more{
     padding:0 0 0 10px;
    }
    
@@ -701,6 +702,7 @@ Version: 1.0
     position: absolute;
     bottom: -8px;
     right: 10px;
+    background: none;
    }
    
    .pages .content .sidebar .block .more .link-more{
@@ -1007,8 +1009,10 @@ Version: 1.0
     margin: 0 0 10px 0 !important;
    }
    
-   
-   .pages .content .sidebar.block .colls .box .title{
+   .pages .content .colls .box{
+    min-height: 50px;
+   }
+   .pages .content .colls .box .title{
         position: absolute;
         z-index: 11;
         display: block;
@@ -1195,5 +1199,34 @@ Version: 1.0
     font-size: 12px;
     font-weight: lighter;
    }
+   .pages .socialPosts .box{
+    border-color: #000000 !important;
+   }
+   .pages .socialPosts .box .title h1{
+        width: 100px !important;
+        height: 35px !important;
+        overflow: hidden !important;
+        padding: 0;
+   }
+   
+   .pages .socialPosts .box .title h1 span{
+        margin: 0 0 0 500px;
+   }
+   
+   .pages .socialPosts .facebook .box .title h1{
+        background: url('images/img_all.png') -623px 0px no-repeat #FFFFFF;
+   }
+   
+   .pages .socialPosts .instagram .box .title h1{
+        background: url('images/img_all.png') -623px -38px no-repeat #FFFFFF;
+   }
    /*======CONTENT-FIM====*/
    
+   
+   /*======PALEATIVOS=======*/
+   
+   .huge_it_slideshow_dots_thumbnails_1{
+    display: none !important;
+   }
+   
+   /*======PALEATIVOS FIM=======*/

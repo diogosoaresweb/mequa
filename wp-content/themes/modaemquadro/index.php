@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 <div class="pages home">
     <div class="slider">
-        <div class="rContainer">
+        <div class="rContainer_bkp">
             <a href="javascript:;" class="slideControl prev" id="prev" title="prev"></a>
             <a href="javascript:;" class="slideControl next" id="next" title="next"></a>
+            
+             <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+             
         </div>
     </div>
     <div class="content two-columns-right">
@@ -428,69 +431,92 @@
     
      <div class="content one-column">
         <div class="rContainer">
-            <div class="block free layout-1 videos">
-                        <div class="title centerBox">
-                            <h1>VÍDEOS</h1>
-                        </div>
-                        <ul class="posts colls colls-6">
-                            <li class="coll block post first">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="coll block post">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="coll block post">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="coll block post">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="coll block post">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="coll block post last">
-                                <a class="blockLink" href="#">
-                                    <div class="img">
-                                        <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    </div>
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="colls coll-1 line-1">
+                <div class="block free layout-1 videos">
+                    <div class="title centerBox">
+                        <h1>TV MODA EM QUADRO</h1>
+                    </div>
+                    <ul class="posts colls colls-6">
+                        <li class="coll block post first">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                        <li class="coll block post">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                        <li class="coll block post">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                        <li class="coll block post">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                        <li class="coll block post">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                        <li class="coll block post last">
+                            <a class="blockLink" href="#">
+                                <div class="img">
+                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
+                                </div>
+                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a class="link-more" href="#"><span>+</span> MAIS</a>
+                    </div>
+                </div>
             </div>
+            
+            
+            <div class="colls colls-2 line-2 socialPosts">
+                <div class="coll block first facebook">
+                    <div class="block box">
+                        <div class="title centerBox">
+                            <h1><span>Facebook</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="coll block last instagram">
+                    <div class="block box">
+                        <div class="title centerBox">
+                            <h1><span>Instagram</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+              
+              
         </div>
      </div>
               
                 
-                <div class="colls colls-2 socialPosts mapear">
-                    <div class="block first">face</div>
-                    <div class="block last">insta</div>
-                </div>
+              
 
             </div>
         </div>
