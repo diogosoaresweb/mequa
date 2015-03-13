@@ -131,6 +131,13 @@ Resoluções:
    
    
       /*======REDIMENCIONAMENTO PALEATIVO SLIDER=======*/
+      
+      .huge_it_slideshow_title_text_1,
+    .huge_it_slideshow_description_text_1{
+        display: none !important;
+    }
+    
+    
    
    .huge_it_slideshow_image_wrap_1,
    .huge_it_slideshow_image_wrap1_1,
@@ -235,6 +242,11 @@ Resoluções:
    
    
       /*======REDIMENCIONAMENTO PALEATIVO SLIDER=======*/
+      
+      .huge_it_slideshow_title_text_1,
+    .huge_it_slideshow_description_text_1{
+        display: none !important;
+    }
    
    .huge_it_slideshow_image_wrap_1,
    .huge_it_slideshow_image_wrap1_1,
@@ -248,6 +260,9 @@ Resoluções:
         height: 320px !important;
         margin-left: -768px !important;
     }
+    
+
+    
     
    /*====== REDIMENCIONAMENTO PALEATIVO SLIDER - FIM =======*/
    
@@ -701,6 +716,18 @@ Resoluções:
    
    
       /*======REDIMENCIONAMENTO PALEATIVO SLIDER=======*/
+      
+      
+     .huge_it_slideshow_title_text_1,
+    .huge_it_slideshow_description_text_1{
+     
+    }
+    
+    .huge_it_slideshow_description_text_1{
+	display: none !important;
+    }
+    
+    
    
    .huge_it_slideshow_image_wrap_1,
    .huge_it_slideshow_image_wrap1_1,

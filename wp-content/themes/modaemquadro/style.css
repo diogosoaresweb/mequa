@@ -636,7 +636,7 @@ Version: 1.0
    .pages .content .block.free .title h1{
     position: relative;
     display: block;
-    font-size:18px;
+    font-size:16px;
     font-weight: lighter;
    }
    
@@ -649,7 +649,7 @@ Version: 1.0
     padding:0 10px 0 10px;
     width:auto;
     height:auto;
-    font-weight:lighter;
+    font-weight:bold;
     color:#000000;
     background:#FFFFFF;
     text-align:center;
@@ -1030,8 +1030,8 @@ Version: 1.0
    
    .pages .content .sidebar.block .colls .block .title h1{
     height:auto;
-    font-size:17px;
-    font-weight:lighter;
+    font-size:16px;
+    font-weight:normal;
     color:#000000;
    }
    
@@ -1127,7 +1127,8 @@ Version: 1.0
    }
     
    
-   
+   .pages .content .publicidade{
+    }
     .pages .content .publicidade .block{
         min-height: 100px;
     }
@@ -1145,11 +1146,42 @@ Version: 1.0
     padding: 0;
     font-weight: lighter;
    }
-   
+   .pages .content .publicidade .block a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+   }
    .pages .content .publicidade .box{
     height: 280px;
+    overflow: hidden;
    }
    
+   .pages .content .publicidade .box img{
+    position: absolute;
+    display: block;
+    width: 722px;
+    height: 280px;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -361px;
+   }
+   
+   
+   .pages .content .publicidade .horizFull{
+        overflow: hidden;
+        max-width: 830px;
+    }
+    
+    .pages .content .publicidade .horizFull img{
+        position: absolute;
+        display: block;
+        width: 830px;
+        height: 100px;
+        top: 0;
+        left: 50%;
+        margin: 0 0 0 -415px;
+    }
  
    
    .mapear .block{
@@ -1248,10 +1280,23 @@ Version: 1.0
    }
 
 
-    .huge_it_slideshow_title_text_1,
-    .huge_it_slideshow_description_text_1{
-        display: none !important;
-    }
+.huge_it_slideshow_title_text_1 {
+    text-decoration: none !important;
+    z-index: 11 !important;
+    width: 100% !important;
+    height: 20% !important;
+    left: 0 !important;
+    top: 80% !important;
+    padding: 3% !important;
+    text-align: left !important;
+    font-weight: normal !important;
+    color: #FFFFFF !important;
+    background: #000000 !important;
+    border-style: none !important;
+    font-size: 13px !important;
+    border-radius: 0 !important;
+    font-family:  'Open Sans', sans-serif !important;
+}
 
 
     .huge_it_slideshow_image_second_item_1 a img.huge_it_slideshow_image_1,
@@ -1260,7 +1305,35 @@ Version: 1.0
         left: 50% !important;
         top: 0 !important;
     }
-       
+    
+    
+    #huge_it_slideshow_left_1 {	
+        /*
+        left:0px;
+        margin-top:-21px;
+        height:43px;
+        width:29px;
+        */
+        left: 15px !important;
+        width: 38px !important;
+        height: 38px !important;
+        background: url('images/img_all.png') no-repeat -165px 0 !important;
+    }
+					
+    #huge_it_slideshow_right_1 {
+        /*
+        right:0px;
+        margin-top:-21px;
+        height:43px;
+        width:29px;
+        */
+        right: 15px !important;
+        width: 38px !important;
+        height: 38px !important;
+        background: url('images/img_all.png') no-repeat -213px 0 !important;
+        }
+                                        
+                                        
    /*====== PALEATIVOS - FIM =======*/
    
    

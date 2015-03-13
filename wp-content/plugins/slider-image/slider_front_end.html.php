@@ -960,7 +960,7 @@ jQuery(function(){
 		background:<?php 			
 				list($r,$g,$b) = array_map('hexdec',str_split($paramssld['slider_title_background_color'],2));
 				$titleopacity=$paramssld["slider_title_background_transparency"]/100;						
-				echo 'rgba('.$r.','.$g.','.$b.','.$titleopacity.')  !important'; 		
+				echo 'rgba('.$r.','.$g.','.$b.','.$titleopacity.')'; 		
 		?>;
 		border-style:solid;
 		font-size:<?php echo $paramssld['slider_title_font_size']; ?>px;

@@ -73,8 +73,15 @@
                         
                     </div>
                 </div>
-                <div class="colls colls-1 line-2 mapear publicidade">
-                    <div class="block"><h1>PUBLICIDADE</h1></h1></div>
+                <div class="colls colls-1 line-2 publicidade">
+                    <div class="block horizFull">
+                        <?php
+                        
+                            if(function_exists( 'wp_bannerize' ))
+                                wp_bannerize( 'group=homeHoriz' );
+                        
+                        ?>
+                    </div>
                 </div>
                 
                 <div class="colls colls-3 line-3 fluid">
@@ -226,8 +233,17 @@
                     </div>
                 </div>
                 
-                <div class="colls colls-1 line-5 mapear publicidade">
-                    <div class="block"><h1>PUBLICIDADE</h1></h1></div>
+                <div class="colls colls-1 line-5 publicidade">
+                    <div class="block horizFull">
+                        
+                        <?php
+                        
+                            if(function_exists( 'wp_bannerize' ))
+                                wp_bannerize( 'group=homeHoriz_2' );
+                        
+                        ?>
+                        
+                    </div>
                 </div>
                 
                 <div class="colls colls-2 line-6">
@@ -355,7 +371,11 @@
                 
                 <div class="colls colls-1 publicidade box">
                     <div class="block box">
-                            <h1>PUBLICIDADE</h1>
+                           <!-- <h1>PUBLICIDADE</h1>-->
+                           <?php
+                            if(function_exists( 'wp_bannerize' ))
+                            wp_bannerize( 'group=homeQuad' );
+                           ?>
                     </div>
                 </div>
                 
