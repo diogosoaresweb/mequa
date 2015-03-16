@@ -653,6 +653,7 @@ Version: 1.0
     color:#000000;
     background:#FFFFFF;
     text-align:center;
+    text-transform: uppercase;
    }
    
    .pages .content .block.free .posts{
@@ -744,12 +745,12 @@ Version: 1.0
     margin-right:0 !important;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.primary{
+   .pages .content.two-columns-right .main .block.free.layout-1 .posts .post:first-child{
     width:100%;
     height:230px;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.primary a.img{
+   .pages .content .block.free.layout-1 .posts .post:first-child a.img{
     position:relative;
     display:block;
     width:100%;
@@ -758,7 +759,7 @@ Version: 1.0
     overflow:hidden;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.primary a.img h2{
+   .pages .content .block.free.layout-1 .posts .post:first-child a.img h2{
     position:absolute;
     display:block;
     padding:10px;
@@ -768,14 +769,60 @@ Version: 1.0
     z-index:10;
     background:#000000;
     bottom:0;
+    width: 100%;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.primary a.img img{
+   .pages .content .block.free.layout-1 .posts .post:first-child a.img img{
     width:100%;
     height:auto;
     max-width:100%;
    }
-   .pages .content .block.free.layout-1 .posts .post.secondary{
+   
+   
+    /*--- SECONDARY----*/
+    
+    .pages .content .block.free.layout-1 .posts li.post:last-child{
+    margin-right:0 !important;
+   }
+   
+   .pages .content.two-columns-right .main .block.free.layout-1 .posts li.post ~ li.post{
+    width:48%;
+    margin:20px 4% 0 0;
+   }
+   
+   
+   
+   .pages .content .block.free.layout-1 .posts .post ~ li.post a.img{
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+   }
+   
+   
+   .pages .content .block.free.layout-1 .posts .post ~ li.post a.img img{
+    width:100%;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+    margin:0;
+   }
+   
+   .pages .content .block.free.layout-1 .posts .post  ~ li.post a.img h2{
+    position:relative;
+    display:block;
+    padding:0;
+    margin:5px 0 0 0;
+    color:#000000;
+    font-size:13px;
+    font-weight:normal;
+   }
+   
+   /*--- SECONDARY - FIM----*/
+   
+   
+   /*--- SECONDARY BKP----*/
+  /* .pages .content .block.free.layout-1 .posts li.post.secondary{
     width:48%;
     margin:20px 4% 0 0;
    }
@@ -805,8 +852,8 @@ Version: 1.0
     font-size:13px;
     font-weight:normal;
    }
-   
-   
+   */
+   /*--- SECONDARY BKP - FIM----*/
    
    
    
@@ -840,6 +887,7 @@ Version: 1.0
    
    .pages .content .block.free.layout-2 .posts .post.secondary a.img img{
     width:48%;
+    height: auto;
     margin:0 4% 0 0;
     float:left;
     display:inline-block;

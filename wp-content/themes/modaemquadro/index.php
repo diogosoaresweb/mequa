@@ -9,67 +9,24 @@
              
         </div>
     </div>
+   
     <div class="content two-columns-right">
         <div class="rContainer">
             <div class="block main">
                 
                 <div class="colls colls-2 line-1">
                     <div class="block first free layout-1">
-                        <div class="title centerBox">
-                            <h1>EU RECOMENDO</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post primary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        
+                        <?php
+                            categoryHome('layout-1','eu-recomendo', '3', '');
+                        ?>
+                        
                     </div>
                     <div class="block last free layout-1">
                         
-                        <div class="title centerBox">
-                            <h1>MAKE EM QUADRO</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post primary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php
+                            categoryHome('layout-1','make-em-quadro', '3', '');
+                        ?>
                         
                     </div>
                 </div>
@@ -89,147 +46,32 @@
                     
                     
                     <div class="block first free layout-2">
-                        <div class="title centerBox">
-                            <h1>EDITORIAL</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                         <?php categoryHome('layout-2','editorial', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block free layout-2">
-                        <div class="title centerBox">
-                            <h1>ENTREVISTA</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-2','entrevista', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block last free layout-2">
-                        <div class="title centerBox">
-                            <h1>ESPECIAL</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-2','especial', '2', 'secondary'); ?>
                     </div>
 
                 </div>
                 
                 <div class="colls colls-3 line-4 fluid">
-                    
-                    
+
                     
                     <div class="block first free layout-2">
-                        <div class="title centerBox">
-                            <h1>FULL ULTILIDADES</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-2','full-ultilidades', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block free layout-2">
-                        <div class="title centerBox">
-                            <h1>MODA DAS ESTRELAS</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-2','moda-das-estrelas', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block last free layout-2">
-                        <div class="title centerBox">
-                            <h1>SUPER TREND</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post first secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post last secondary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", em tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-2','super-trend', '2', 'secondary'); ?>
                     </div>
                 </div>
                 
@@ -249,37 +91,11 @@
                 <div class="colls colls-2 line-6">
                     
                     <div class="block first free layout-1 modaDoBem">
-                        <div class="title centerBox">
-                            <h1>MODA DO BEM</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post primary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-1', 'moda-do-bem', '1', ''); ?>
                     </div>
                     
                     <div class="block last free layout-1 modaNaReal">
-                        <div class="title centerBox">
-                            <h1>MODA NA REAL</h1>
-                        </div>
-                        <ul class="posts">
-                            <li class="post primary">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2>Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
+                        <?php categoryHome('layout-1', 'moda-na-real', '1', ''); ?>
                     </div>
                     
                     
@@ -519,6 +335,9 @@
                         <div class="title centerBox">
                             <h1><span>Facebook</span></h1>
                         </div>
+                        
+                        <?php// echo do_shortcode( '[efb_likebox fanpage_url="https://www.facebook.com/pages/modaemquadro" fb_appid="" box_width="250" box_height="230" locale="pt_BR" responsive="1" colorscheme="light" show_faces="1" show_header="0" show_stream="0" show_border="0"]' ); ?>
+                        
                     </div>
                 </div>
                 <div class="coll block last instagram">
