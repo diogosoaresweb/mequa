@@ -290,7 +290,7 @@ Resoluções:
 }
  
     
-.pages .content .block.free.layout-1 .posts .post.secondary a.img h2{
+.pages .content .main .block.free.layout-1 .posts .post a.img h2{
     margin:0;
     font-size:12px;
    }
@@ -298,23 +298,23 @@ Resoluções:
 .pages .content .block.free.layout-2 .posts{
 	
 }
-.pages .content .block.free.layout-2 .posts .post.secondary{
+.pages .content .main .block.free.layout-2 .posts .post{
     
 }
    
 
-.pages .content .block.free.layout-2 .posts .post.secondary a.img{
+.pages .content .main .block.free.layout-2 .posts .post a.img{
    }
    
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img img{
+   .pages .content .main .block.free.layout-2 .posts .post a.img img{
     width:100%;
     margin:0 0 10px 0;
     float:none;
     display:block;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img h2{
+   .pages .content .main .block.free.layout-2 .posts .post a.img h2{
     display:block;
     font-size:12px;
     font-weight:normal;
@@ -322,7 +322,7 @@ Resoluções:
     float:none;
    }
    
-   .pages .content .block.free.layout-2 .more{
+   .pages .content .main .block.free .more{
     margin:0;
    }
    
@@ -833,13 +833,8 @@ Resoluções:
 }
 /*smartPhone and NetBook*/
 @media only screen and (min-width:480px) and (max-width:767px) {
-       
-      
-    
-    
-    
-   
-    .pages .content .block.free.layout-1 .posts .post.secondary{
+
+    .pages .content .main .block.free.layout-1 .posts .post{
     width:100%;
     height:auto;
     min-height:20px;
@@ -848,28 +843,23 @@ Resoluções:
     border-bottom:1px solid #CCCCCC;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.secondary.last{
+   .pages .content .main .block.free.layout-1 .posts .post.last{
     border-bottom:none;
     padding:0;
    }
    
-   .pages .content .block.free.layout-1 .posts .post.secondary a.img img{
-    display:none;
-   }
    
    
-   
-   
-   .pages .content .block.free.layout-2 .posts .post.secondary{
+   .pages .content .main .block.free.layout-2 .posts .post{
     width:48%;
     margin:0 2% 0 0;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary.last{
+   .pages .content .main .block.free.layout-2 .posts .post.last{
     margin-right:0;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img{
+   .pages .content .main .block.free.layout-2 .posts .post a.img{
     position:relative;
     display:block;
     width:100%;
@@ -878,14 +868,14 @@ Resoluções:
    }
    
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img img{
+   .pages .content .main .block.free.layout-2 .posts .post a.img img{
     width:48%;
     margin:0 4% 0 0;
     float:left;
     display:inline-block;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img h2{
+   .pages .content .main .block.free.layout-2 .posts .post a.img h2{
     position:relative;
     display:inline-block;
     padding:0;
@@ -953,25 +943,23 @@ Resoluções:
    }
    
    
-   .pages .content .block.free.layout-1 .posts .post.secondary{
-	display:none !important;
-   }
+	.pages .content .main .block.free.layout-1 .posts .post ~ .post a.img img{
+	    display:none !important;
+	   }
+   
    .pages .content .block.free .title{
 	margin:0 0 10px 0;
    }
-   .pages .content .block.free.layout-1 .posts .post.secondary{
-	display:none !important;
-   }
+  
    
-   
-   .pages .content .block.free.layout-2 .posts .post.secondary{
+   .pages .content .main .block.free.layout-2 .posts .post{
     width:100%;
     margin:0 0 10px 0;
    }
    
 
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img{
+   .pages .content .main .block.free.layout-2 .posts .post a.img{
     position:relative;
     display:block;
     width:100%;
@@ -980,14 +968,14 @@ Resoluções:
    }
    
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img img{
+   .pages .content .main .block.free.layout-2 .posts .post a.img img{
     width:38%;
     margin:0 4% 0 0;
     float:left;
     display:inline-block;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img h2{
+   .pages .content .main .block.free.layout-2 .posts .post a.img h2{
     position:relative;
     display:inline-block;
     padding:0;

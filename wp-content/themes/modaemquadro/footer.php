@@ -61,8 +61,14 @@
       <a href="javascript:;" title="Home">Top Blogueira</a>
      </li>
      
+     <li class="item">
+      <a href="http://localhost:8888/mequa/tv-moda-em-quadro/" title="Home">TV Moda Em Quadro</a>
+     </li>
+     
+     
+     
      <li class="item last">
-      <a href="javascript:;" title="Home">Contato</a>
+      <a href="http://localhost:8888/mequa/contato/" title="Home">Contato</a>
      </li>
     </ul>
     

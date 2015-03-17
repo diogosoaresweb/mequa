@@ -755,21 +755,20 @@ Version: 1.0
     display:block;
     width:100%;
     height:100%;
-    background:#000000;
     overflow:hidden;
    }
    
    .pages .content .block.free.layout-1 .posts .post:first-child a.img h2{
     position:absolute;
     display:block;
-    padding:10px;
+    padding:3%;
     color:#FFFFFF;
     font-size:14px;
     font-weight:lighter;
     z-index:10;
     background:#000000;
     bottom:0;
-    width: 100%;
+    width: 94%;
    }
    
    .pages .content .block.free.layout-1 .posts .post:first-child a.img img{
@@ -871,12 +870,12 @@ Version: 1.0
     float:left;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary{
+   .pages .content .main .block.free.layout-2 .posts .post{
     width:100%;
     margin:0 0 20px 0;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img{
+   .pages .content .block.free.layout-2 .posts .post a.img{
     position:relative;
     display:block;
     width:100%;
@@ -885,7 +884,7 @@ Version: 1.0
    }
    
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img img{
+   .pages .content .block.free.layout-2 .posts .post a.img img{
     width:48%;
     height: auto;
     margin:0 4% 0 0;
@@ -893,7 +892,7 @@ Version: 1.0
     display:inline-block;
    }
    
-   .pages .content .block.free.layout-2 .posts .post.secondary a.img h2{
+   .pages .content .block.free.layout-2 .posts .post a.img h2{
     position:relative;
     display:inline-block;
     padding:0;
@@ -1116,6 +1115,60 @@ Version: 1.0
    }
    
    
+   /*--------Fomulário NewsLetter do Plugin MailPoet-----------*/
+   .php_wysija{}
+   .php_wysija p.wysija-paragraph{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 76%;
+    margin: 0 4% 0 0;
+    height: 30px !important;
+   }
+   .php_wysija p.wysija-paragraph input.wysija-input{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0 2% 0 2%;
+    
+    color:#666666;
+    font-size:12px;
+   }
+   .php_wysija .wysija-submit{
+    position:relative !important;
+    display:inline-block !important;
+    height:30px !important;
+    border:none !important;
+    width:20% !important;
+    float:left !important;
+    cursor:pointer !important;
+    margin: 0 !important;
+   }
+   
+    .php_wysija .wysija-submit{
+    background:url('images/icons-center.png') center 10px #000000 no-repeat !important;
+   }
+   
+   
+   .php_wysija .formError{
+    top: 35px !important;
+    left: 0 !important;
+    margin-top: 0px !important;
+    width: 100% !important;
+    display: block !important;
+   }
+   
+   .php_wysija .formError .formErrorContent{
+    width: 100% !important;
+    z-index: 5001; 
+   }
+   
+   /*--------FIM - Fomulário NewsLetter do Plugin MailPoet-----------*/
+   
    
    
    .pages .content .sidebar.block .colls .block .form{
@@ -1171,7 +1224,7 @@ Version: 1.0
    
    
    .pages .content .sidebar.block .newsletter .form form input.submit{
-    background:url('images/icons-center.png') center 10px #000000 no-repeat;
+    background:url('images/icons-center.png') center 10px #000000 no-repeat !important;
    }
     
    
@@ -1305,6 +1358,14 @@ Version: 1.0
    
    
    /*======PALEATIVOS=======*/
+   
+   .noContentBlock{
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    display: block;
+   }
    
    .huge_it_slideshow_dots_thumbnails_1{
     display: none !important;

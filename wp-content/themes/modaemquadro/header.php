@@ -81,9 +81,15 @@
 		<li class="item nav-1">
 		    <a href="javascript:;" title="Home">MODA DAS ESTRELAS</a>
 		</li>
-		<li class="item nav-1 sub">
+		
+		<li class="item nav-1 last">
+		    <a href="http://localhost:8888/mequa/tv-moda-em-quadro/" title="Home">TV</a>
+		</li>
+		
+		
+		<li class="item nav-1 sub last">
 		    <a href="javascript:;" title="Home">MAIS</a>
-		    <ul class="subNav left">
+		    <ul class="subNav right">
 			<li class="item nav-2 first">
 			    <a href="javascript:;" title="Sobre Nós">SOBRE NÓS</a>
 			</li>
@@ -108,15 +114,15 @@
 			<li class="item nav-2">
 			    <a href="javascript:;" title="Ju Responde">JÚ RESPONDE</a>
 			</li>
-			<li class="item nav-2 last">
+			<li class="item nav-2">
 			    <a href="javascript:;" title="Top Blogueiras">TOP BLOGUEIRAS</a>
+			</li>
+			<li class="item nav-2 last">
+			    <a href="http://localhost:8888/mequa/contato/" title="Top Blogueiras">CONTATO</a>
 			</li>
 		    </ul>
 		</li>
-		
-		<li class="item nav-1 last">
-		    <a href="javascript:;" title="Home">CONTATO</a>
-		</li>
+
 	    </ul>
 	    <img class="foto" src="<?php echo  get_template_directory_uri(); ?>/images/juliana.png" alt="Juliana Melo">
     </div>

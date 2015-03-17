@@ -24,9 +24,7 @@
                     </div>
                     <div class="block last free layout-1">
                         
-                        <?php
-                            categoryHome('layout-1','make-em-quadro', '3', '');
-                        ?>
+                        <?php categoryHome('layout-1','make-em-quadro', '3', ''); ?>
                         
                     </div>
                 </div>
@@ -144,44 +142,7 @@
                 
                 <div class="colls colls-1 juResponde">
                     <div class="block box layout-2">
-                        <div class="title centerBox">
-                            <h1>JU RESPONDE</h1>
-                        </div>
-                        
-                        <ul class="posts">
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
-                        
-                        
+                        <?php categoryHome('layout-2','ju-responde', '4', ''); ?>
                     </div>
                 </div>
                 
@@ -198,14 +159,24 @@
                 
                 <div class="colls colls-1 newsletter">
                     <div class="block box-free hLines">
+                        
                         <div class="title icon">
                             <h1>RECEBA NOVIDADES</h1>
                         </div>
                         <div class="form">
+                            
+                            <?php
+                        
+                                $widgetNL = new WYSIJA_NL_Widget(true);
+                                echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
+                        
+                            ?>
+                            <!--
                             <form>
                                 <input type="text" class="text" placeholder="QUAL O SEU E-MAIL?" />
                                 <input type="submit" class="submit" value=""/>
                             </form>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -214,45 +185,7 @@
                 
                 <div class="colls colls-1 topBlogueiras">
                     <div class="block box layout-2">
-                        <div class="title centerBox">
-                            <h1>TOP BLOGUEIRAS</h1>
-                        </div>
-                        
-                        <ul class="posts">
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                            
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                    <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                        
-                        <div class="more">
-                            <a class="link-more" href="#"><span>+</span> MAIS</a>
-                        </div>
-                        
-                        
+                        <?php categoryHome('layout-2','top-blogueiras', '4', ''); ?>
                     </div>
                 </div>
                 
@@ -269,62 +202,7 @@
         <div class="rContainer">
             <div class="colls coll-1 line-1">
                 <div class="block free layout-1 videos">
-                    <div class="title centerBox">
-                        <h1>TV MODA EM QUADRO</h1>
-                    </div>
-                    <ul class="posts colls colls-6">
-                        <li class="coll block post first">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                        <li class="coll block post">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                        <li class="coll block post">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                        <li class="coll block post">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                        <li class="coll block post">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                        <li class="coll block post last">
-                            <a class="blockLink" href="#">
-                                <div class="img">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </div>
-                                <h2 class="text">Titulo da postagem listada na pagina "Home", escrito em at&eacute; tr&ecirc;s linhas.</h2>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="more">
-                        <a class="link-more" href="#"><span>+</span> MAIS</a>
-                    </div>
+                    <?php categoryHome('videos','videos', '6', 'colls colls-6'); ?>
                 </div>
             </div>
             
