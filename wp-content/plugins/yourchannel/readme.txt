@@ -4,7 +4,7 @@ Tags: youtube, youtube playlists, subscription, subscribe, embed, video, videos,
 Donate link: http://plugin.builders/yourchannel/?d=donate
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 0.3.1
+Stable tag: 0.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,7 @@ Just like YouTube. Displays banner, name, profile pic, uploads, playlists and mo
 
 == Description ==
 Do you create or curate YouTube videos? Now turn your website with YouTube links into an engagement platform.
+
 You don't need more storage or bandwidth, and your visitors hate leaving the webpage they've already loaded, so why don't you show your videos and playlists in your own website.
 	
 Tell this plugin your YouTube username or channel ID and it'll setup your channel in your own property.
@@ -23,21 +24,29 @@ Tell this plugin your YouTube username or channel ID and it'll setup your channe
 * Uploads (sorted by views.)
 * Playlists (lists videos on that playlist on click). (Optional)
 * Banner image in footer.
-* Default color accent is Black & White.
+* Default color accent Black & White.
+
+**Features :**
+
+* Easy visual builder with live preview which generates shortcode that looks like `[yourchannel user="user"]`.
+* Play video in Lightbox or Inline. **New**
+* 7 video thumb styles. **New**
+* Beautifully responsive.
+* SVG icons, which means you can change colors.
+* Feature suggestions are implemented quickly.
 * Smooooth animations.
+* Shortcode works in page, posts or custom fields.
+* Loads files only if shortcode is present. 
+* Quick translation form for UI terms (Videos, Playlists, Loading... etc.). **New**
 
-You can put YourChannel shortcode in page/posts or any custome fields.
-Shortcode looks like `[yourchannel user="you"]`.
-
-YourChannel is completely responsive (shouldn't have mentioned, IT'S 2015).
 
 Don't let visitors leave your site for YouTube.
 
-**[Demo](http://plugin.builders/yourchannel/?demo=free)**
+**[Demo (old version)](http://plugin.builders/yourchannel/?demo=free)**
 
 **[Video tutorial in Spanish](http://www.webempresa.com/blog/item/1733-publica-tu-canal-de-videos-de-youtube-en-wordpress.html)**
 
-**Support :** We'll solve your issue within 6-18 hours.
+**Support :** We'll respond to your issue within 6-18 hours.
 
 Write to us at **support[at]plugin.builders**
 

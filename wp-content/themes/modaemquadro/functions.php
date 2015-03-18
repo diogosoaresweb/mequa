@@ -1,11 +1,63 @@
 <?php
+//Imagens Destacadas dos posts e paginas
  add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 395, 296 );
 
 
+//Menu do Tema
+
+add_action('init', 'register_nav_menus_on_init');
+
+function register_nav_menus_on_init() {
+	register_nav_menus(array(
+		'top-pages-menu' => 'Menu > Topo da página',
+		'top-cat-menu' => 'Menu > Topo categorias',
+		'footer-link-menu' => 'Menu > Links no rodapé',
+	));
+        
+}
+        
+
+//WIDGETS
 
 
 
+
+if (function_exists('register_sidebar'))
+{
+    register_sidebar(array(
+        'name'          => 'Sidebar',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+
+	register_sidebar(array(
+		'name' => __( 'Widget Perfil - Container' ),
+		'id' => 'home-sidebar-profile',
+		'description' => __( 'Widget do Perdil do(a) Autor(a) do Portal' ),
+		'before_widget' => '<li id="%1$s" class="%2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+
+
+	register_sidebar(array(
+		'name' => __( 'Widget Rodapé' ),
+		'id' => 'widget-footer',
+		'description' => __( 'Arraste os widgets desejados até aqui' ),
+		'before_widget' => '<li id="%1$s" class="%2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+        
+
+}
+
+// Posts na HOME
 
    //Posts da Home/Main/Layout-1 separados por categorias
  function categoryHome ($layout, $slugCatName, $postLimit, $class) {

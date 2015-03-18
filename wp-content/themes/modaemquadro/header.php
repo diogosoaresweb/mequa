@@ -47,12 +47,13 @@
 	    </ul>
 	    
 	    
-	    <form class="search">
-		<input type="submit" class="submit" value="" />
+	    <form class="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+		<input type="submit" id="searchsubmit" class="submit" value="" />
 		<div class="inputText">
-		    <input type="text" name="keyword" class="keyword" placeholder="PESQUISAR..."  />
+		    <input type="text" name="s" id="s" class="keyword" placeholder="O QUE VOCÊ ESTÁ PROCURANDO?"  />
 		</div>
-	    </form> 
+	    </form>
+
 	    
 	    
 	</div>
@@ -131,38 +132,7 @@
 	
     <!-- NAV Begins -->
     <!--
-    <div class="nav">
-        <div class="rContainer">
-	    <ul class="mainMenu left">
-		<li class="item nav-1 first">
-		    <a href="javascript:;" title="Home">HOME</a>
-		</li>
-		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">EU RECOMENDO</a>
-		</li>
-		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">MAKE EM QUADRO</a>
-		</li>
-		<li class="item nav-1 last">
-		    <a href="javascript:;" title="Home">MODA NA REAL</a>
-		</li>
-	    </ul>
-	    
-	    <ul class="mainMenu right">
-		<li class="item nav-1 first">
-		    <a href="javascript:;" title="Home">HOME</a>
-		</li>
-		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">HOME</a>
-		</li>
-		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">HOME</a>
-		</li>
-		<li class="item nav-1 last">
-		    <a href="javascript:;" title="Home">HOME</a>
-		</li>
-	    </ul>
-        </div>
+    
         <?php // wp_nav_menu($defaults); ?>
         <div class="clear"></div>
     </div>

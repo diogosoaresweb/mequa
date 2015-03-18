@@ -103,6 +103,25 @@
             </div>
             <div class="block sidebar">
                 
+                <?php   //get_sidebar(); ?>
+                 
+                 <!------- PERFIL-------->
+                 <div class="colls colls-1 perfil">
+                    <div class="block box layout-1">
+                        
+                        <ul class="posts">
+                            
+                            <?php   if ( is_active_sidebar( 'home-sidebar-profile' ) ) :
+                                        dynamic_sidebar( 'home-sidebar-profile' );
+                                    endif;
+                            ?>
+                        </ul>
+                    </div>
+                 </div>
+                <!------- PERFIL FIM-------->
+       
+                <!------- PERFIL BACKUP -------->
+                <!--
                 <div class="colls colls-1 perfil">
                     <div class="block box layout-1">
                         
@@ -120,10 +139,11 @@
                                 </div>
                             </li>
                         </ul>
-                        
-                        
                     </div>
                 </div>
+                 -->
+                
+                <!------- PERFIL BACKUP - FIM-------->
                 
                 <div class="colls colls-1 search">
                     <div class="block box-free hLines">
@@ -131,9 +151,9 @@
                             <h1>PESQUISE MAT&Eacute;RIAS</h1>
                         </div>
                         <div class="form">
-                            <form>
-                                <input type="text" class="text" placeholder="O QUE VOCÊ EST&Aacute; PROCURANDO?" />
-                                <input type="submit" class="submit" value=""/>
+                            <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+                                <input type="text" name="s" id="s" class="text" placeholder="O QUE VOCÊ EST&Aacute; PROCURANDO?" />
+                                <input type="submit" id="searchsubmit" class="submit" value=""/>
                             </form>
                         </div>
                     </div>
@@ -240,6 +260,4 @@
      </div>
      
 </div>
-
-<?php // get_sidebar(); ?>
 <?php get_footer(); ?>
