@@ -13,6 +13,9 @@
 <script type="text/javascript" src="<?php echo  get_template_directory_uri(); ?>/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="<?php echo  get_template_directory_uri(); ?>/js/scripts.js"></script>
 
+<link rel="stylesheet" id="the-neverending-homepage-css" href="http://localhost:8888/mequa/wp-content/plugins/jetpack/modules/infinite-scroll/infinity.css?ver=20140422" type="text/css" media="all">
+    
+    
 <!-- Temporários -->
 <link rel="stylesheet" href="<?php echo  get_template_directory_uri(); ?>/css/style_temp.css" media="all" type="text/css" />
 <!--
@@ -65,26 +68,26 @@
 	<div class="rContainer">
 	    <ul class="mainMenu">
 		<li class="item nav-1 first current">
-		    <a href="javascript:;" title="Home">HOME</a>
+		    <a href="<?php echo get_option('home');?>/" title="Home">HOME</a>
 		</li>
 		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">EU RECOMENDO</a>
+		    <a href="<?php echo get_option('home');?>/category/eu-recomendo/" title="Home">EU RECOMENDO</a>
 		</li>
 		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">MAKE EM QUADRO</a>
+		    <a href="<?php echo get_option('home');?>/category/make-em-quadro/" title="Home">MAKE EM QUADRO</a>
 		</li>
 		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">MODA NA REAL</a>
+		    <a href="<?php echo get_option('home');?>/category/moda-na-real/" title="Home">MODA NA REAL</a>
 		</li>
 		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">MODA DO BEM</a>
+		    <a href="<?php echo get_option('home');?>/category/moda-do-bem/" title="Home">MODA DO BEM</a>
 		</li>
 		<li class="item nav-1">
-		    <a href="javascript:;" title="Home">MODA DAS ESTRELAS</a>
+		    <a href="<?php echo get_option('home');?>/category/moda-das-estrelas/" title="Home">MODA DAS ESTRELAS</a>
 		</li>
 		
 		<li class="item nav-1 last">
-		    <a href="http://localhost:8888/mequa/tv-moda-em-quadro/" title="Home">TV</a>
+		    <a href="<?php echo get_option('home');?>/tv-moda-em-quadro/" title="Home">TV</a>
 		</li>
 		
 		
@@ -92,34 +95,34 @@
 		    <a href="javascript:;" title="Home">MAIS</a>
 		    <ul class="subNav right">
 			<li class="item nav-2 first">
-			    <a href="javascript:;" title="Sobre Nós">SOBRE NÓS</a>
+			    <a href="<?php echo get_option('home');?>/sobre-juliana-melo/" title="Sobre Nós">SOBRE NÓS</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Vídeos">VÍDEOS</a>
+			    <a href="<?php echo get_option('home');?>/category/videos/" title="Vídeos">VÍDEOS</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Editorial">EDITORIAL</a>
+			    <a href="<?php echo get_option('home');?>/category/editorial/" title="Editorial">EDITORIAL</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Entrevista">ENTREVISTA</a>
+			    <a href="<?php echo get_option('home');?>/category/entrevista/" title="Entrevista">ENTREVISTA</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Especial">ESPECIAL</a>
+			    <a href="<?php echo get_option('home');?>/category/especial/" title="Especial">ESPECIAL</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Ful Ultilidades">FUL ULTILIDADES</a>
+			    <a href="<?php echo get_option('home');?>/category/full-ultilidades/" title="Ful Ultilidades">FUL ULTILIDADES</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Super Trends">SUPER TRENDS</a>
+			    <a href="<?php echo get_option('home');?>/category/super-trends/" title="Super Trends">SUPER TRENDS</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Ju Responde">JÚ RESPONDE</a>
+			    <a href="<?php echo get_option('home');?>/category/ju-responde/" title="Ju Responde">JÚ RESPONDE</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="javascript:;" title="Top Blogueiras">TOP BLOGUEIRAS</a>
+			    <a href="<?php echo get_option('home');?>/category/top-blogueiras/" title="Top Blogueiras">TOP BLOGUEIRAS</a>
 			</li>
 			<li class="item nav-2 last">
-			    <a href="http://localhost:8888/mequa/contato/" title="Top Blogueiras">CONTATO</a>
+			    <a href="<?php echo get_option('home');?>/contato/" title="Contato">CONTATO</a>
 			</li>
 		    </ul>
 		</li>

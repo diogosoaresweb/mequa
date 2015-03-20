@@ -582,6 +582,8 @@ Version: 1.0
     width:47.5903614%;
    }
    
+   
+   
    .pages .content.two-columns-right .colls.colls-3 > .block{
     width:30%;
    }
@@ -1496,5 +1498,126 @@ Version: 1.0
    
    
    /*====== PALEATIVOS - FIM =======*/
+   
+   /*=====================INTERNAS======================*/
+   
+   /*---GLOBAL---*/
+   .pages.inside img{
+    max-width: 100%;
+   }
+   /*---GLOBAL - FIM---*/
+   
+   .pages.inside .breadcrumbs{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    line-height: 0px;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid #CCCCCC;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 100;
+   }
+   
+   .pages.inside .breadcrumbs a{
+    color: #000000;
+   }
+   .pages.inside .breadcrumbs span{
+    color: #999999;
+   }
+   
+   .inside{}
+   .inside .headPage{
+    position: relative;
+    display: table;
+    width: 100%;
+    min-height: 120px;
+    margin: 0 0 40px 0;
+   }
+   
+   .inside .headPage.styleDefault{
+    background: #000000;
+    height: 120px;
+   }
+   
+   .inside .headPage .title{
+    position: relative;
+    display: table;
+    width: auto;
+    min-height: 120px;
+    
+   }
+   
+   .inside .headPage .title h1{
+    position: relative;
+    display: table-cell;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+   }
+   .inside .content .posts .post{
+    display: inline-table;
+    padding: 30px 0 30px 0;
+    border-top: 1px solid  #000000;
+    min-height: 235px;
+   }
+   
+   .inside .content .posts .post a.img{
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    width: 48%;
+    height: auto;
+    overflow: hidden;
+   }
+   
+   .inside .content .posts .post .img img{
+   height: 235px;
+   width: auto;
+   max-width: inherit;
+   }
+   
+   .inside .content .posts .post .title,
+   .inside .content .posts .post .date,
+   .inside .content .posts .post .resume-content{
+    position: relative;
+    display: block;
+    width: 48%;
+    height: auto;
+    margin: 0 0 10px 52%;
+   }
+    .inside .content .posts .post .date{
+    font-size: 12px;
+    color: #999999;
+    font-style: italic;
+   }
+   
+   .inside .content .posts .post .title h2{
+    font-size: 20px;
+    font-weight: 600;
+   }
+   
+   
+   .inside .content .posts .post .resume-content{
+    max-height: 35px;
+    font-size: 13px;
+    overflow: hidden;
+    font-weight: 100;
+   }
+   .inside .content .posts .post .resume-content strong{
+    font-weight: 100;
+   }
+   
+   .inside .content .posts .post .resume-content img{
+    display: none !important;
+   }
+   
+   /*=====================INTERNAS - FIM======================*/
    
    

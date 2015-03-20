@@ -169,7 +169,14 @@ Resoluções:
 }
 /*======HOME - FIM====*/
 
+/*======INTERNAS====*/
 
+
+.pages .content.two-columns-right .colls.colls-2 > .block:nth-child(even){
+    margin-right: 0 !important;
+   }
+
+/*======INTERNAS - FIM====*/   
 
 /*=============== PAGES - FIM ========*/
 	
@@ -827,6 +834,19 @@ Resoluções:
    .content.one-column .line-2.socialPosts{
 	display: none;
    }
+   
+   .widget_simpleimage a img {
+  position: relative;
+  display: block;
+  max-height: inherit;
+  height: auto;
+  right: 0;
+  margin: 0;
+  width: inherit;
+  max-width: 100%;
+}
+
+
    
    /*======CONTENT - FIM====*/  
    	
