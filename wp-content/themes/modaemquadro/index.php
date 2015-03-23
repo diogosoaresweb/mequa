@@ -120,30 +120,6 @@
                  </div>
                 <!------- PERFIL FIM-------->
        
-                <!------- PERFIL BACKUP -------->
-                <!--
-                <div class="colls colls-1 perfil">
-                    <div class="block box layout-1">
-                        
-                        <ul class="posts">
-                            <li class="post">
-                                <a class="img" href="#">
-                                    <img src="<?php echo  get_template_directory_uri(); ?>/images/img-test.png" alt="img tst" border="0" />
-                                </a>
-                                <div class="text">
-                                    <h2>JULIANA MELO</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                                    </p>
-                                    
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                 -->
-                
-                <!------- PERFIL BACKUP - FIM-------->
                 
                 <div class="colls colls-1 search">
                     <div class="block box-free hLines">
@@ -191,12 +167,6 @@
                                 echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
                         
                             ?>
-                            <!--
-                            <form>
-                                <input type="text" class="text" placeholder="QUAL O SEU E-MAIL?" />
-                                <input type="submit" class="submit" value=""/>
-                            </form>
-                            -->
                         </div>
                     </div>
                 </div>

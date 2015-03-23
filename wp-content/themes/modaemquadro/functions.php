@@ -54,8 +54,25 @@ if (function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
         
+        
+        register_sidebar(array(
+		'name' => __( 'Widget Posts' ),
+		'id' => 'widget-posts',
+		'description' => __( 'Arraste os widgets desejados até aqui' ),
+		'before_widget' => '<li id="%1$s" class="%2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+        
 
 }
+
+
+
+
+
+
 
 // Posts na HOME
 
@@ -277,5 +294,50 @@ if (is_category()) {
 }
 
 
-//Scroll Infinito
+//Limitar Caracteres
 
+ //Posts da Home/Main/Layout-1 separados por categorias
+ function limitaCaracteres ($string, $maxLength) {
+  
+
+if (strlen($string) > $maxLength) {
+    $stringCut = substr($string, 0, $maxLength);
+    $string = substr($stringCut, 0, strrpos($stringCut, ' ')); 
+}
+
+echo $string;
+
+// output: The quick brown fox
+
+
+ }
+ 
+ // Limitando palavras via The_Except
+ 
+ function custom_excerpt_length($length) {
+	return 8;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+
+//NAV SIDEBAR
+
+$navDefault = array(
+	'theme_location'  => '',
+	'menu'            => '',
+	'container'       => 'div',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'menu',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
