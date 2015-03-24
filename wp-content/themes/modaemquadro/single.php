@@ -34,7 +34,7 @@
                   <h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
                   <div class="info">
                      <div class="date">Postado em <?php the_time('j \d\e\ F \d\e\ Y'); ?></div>
-                     <a class="countComments" href="#">35 Comentário(s)</a>
+                     <div class="countComments" href="#"><?php echo $post->comment_count; ?> Comentário(s)</div>
                   </div>  
                </div>
                <div class="contentPost">
@@ -43,57 +43,48 @@
                
                
                <div class="colls colls-2">
-                    <div class="block first free">
+                    
+                    <div class="boll block first free socialShare">
+                        
+                        <div class="title centerBox">
+                          <h1>COMPARTILHE</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="coll block last free tags">
                         <div class="title centerBox">
                           <h1>TAG'S</h1>
                         </div>
                         
                         <div class="">
-                           
-                           <?php   if ( is_active_sidebar( 'widget-posts' ) ) :
-                                        dynamic_sidebar( 'widget-posts' );
-                                    endif;
-                            ?>
-                            
+                            <?php the_tags( '<ul><li> ', '</li><li>', '</li></ul>' ); ?> 
                         </div>
-                        
-                        
-                        
-                        
                     </div>
-                    <div class="block last free">
+                    
+                </div>
+               
+               <div class="colls colls-1">
+                    
+                    <div class="coll block first free comments">
                         
                         <div class="title centerBox">
-                          <h1>COMPARTILHE</h1>
+                          <h1>COMENTÁRIOS</h1>
                         </div>
-                        
                     </div>
-                </div>
-                  
-                  
+                    
+                    <?php  comments_template(); ?>
+                    
+               </div>
     
-   
-                  <div id="comments">
-                     <dl class="comment">
-                     <dt><?php the_author(); ?></dt>
-                     
-                     </dl>
-                  </div>
-   
-    
-   <?php  comments_template(); ?>
    <?php endwhile; ?>
   <?php endif; ?>
-  <?php posts_nav_link(' &#8212; ', __('&laquo; P&aacute;gina anterior'), __('Pr&oacute;xima p&aacute;gina &raquo;')); ?>
   
-               
-               
-               
             </div>
+            
             <div class="block sidebar">
 	       
 	       <!------- NAV CATEGORY -------->
-                 <div class="colls colls-1">
+                 <div class="colls colls-1 navCategory">
                     <div class="block box">
 		     
 			<?php wp_nav_menu( $navDefault ); ?>

@@ -175,6 +175,7 @@ Resoluções:
 /*======HOME - FIM====*/
 
 /*======INTERNAS====*/
+/*
 
 .single .pages .headerPost .info .countComments:hover{
     color: #000000;
@@ -183,7 +184,7 @@ Resoluções:
     background: url('../images/img_all.png') -1210px 0;
    }
    
-   
+*/   
    
 /*---NAV SIDEBAR----*/
 #menu-navsidebar li a:hover{
@@ -193,7 +194,12 @@ Resoluções:
     line-height: 35px;
    }
    
-/*---NAV SIDEBAR - FIM ----*/   
+/*---NAV SIDEBAR - FIM ----*/
+
+.single .pages .tags ul li a:hover{
+	background: #000000;
+	color: #FFFFFF;
+}
 /*======INTERNAS - FIM====*/   
 
 /*=============== PAGES - FIM ========*/
@@ -903,6 +909,36 @@ Resoluções:
 	font-size: 16px;
 }
 
+
+.pages .content.two-columns-right .colls.colls-2 > .block{
+	min-height: 100px;
+}
+
+ 
+   #crestashareiconincontent {
+    bottom: -133px;
+    text-align: center !important;
+    width: 100% !important;
+   }
+   
+   #crestashareiconincontent .sbutton{
+	float: initial !important;
+	display: inline-block !important;
+   }
+   
+   .single .pages .tags ul{
+    text-align: center;
+    width: 100%;
+   }
+   .single .pages .tags ul li{
+    display: inline-block;
+    float: initial !important;
+   }
+   
+   
+   .sidebar .navCategory{
+	display: none !important;
+   }
 
 /*======INTERNAS - FIM====*/
 

@@ -63,39 +63,52 @@
 
 <?php if ('open' == $post->comment_status) : ?>
 
-Deixe seu coment&aacute;rio<br />
+<center>DEIXE SEU COMENTÁRIO</center>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">logged in</a> to post a comment.<br />
 <?php else : ?>
 
-<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-<?php if ( $user_ID ) : ?>
+<form class="commentsPost" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+<fieldset>
+	<ul class="fluidColls">
+	<?php if ( $user_ID ) : ?>
+		<li class="fluidColl fluidColls-1">
+			Logado como <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Logout &raquo;</a><br />
+		</li>
+	<?php else : ?>
+	
+		<li class="fluidColl fluidColls-2">
+			
+			<label for="author">Nome <?php if ($req) echo "*"; ?></label>
+			<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="1" class="text"/>
+		</li>
+		<li class="fluidColl fluidColls-2">
+			<label for="email">Email (n&atilde;o ser&aacute; publicado) <?php if ($req) echo "*"; ?></label>
+			<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="2" class="text"/>
+		</li>
+		<li class="fluidColl fluidColls-1">
+			<label for="url">Site</label>
+			<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" class="text"/>
+		</li>
+	<?php endif; ?>
 
-Logado como <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Logout &raquo;</a><br />
+		<!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
+		<li class="fluidColl fluidColls-1">
+			<label for="comment">Comentário</label>
+			<textarea name="comment" id="comment" cols="50" rows="7" tabindex="4" class="text"></textarea><br />
+		</li>
+	</ul>
 
-<?php else : ?>
+	<input name="submit" type="submit" id="submit" tabindex="5" value="Enviar Coment&aacute;rio" class="button"/>
+	<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+	
+	<?php do_action('comment_form', $post->ID); ?>
+	
+	<p>(*)campos obrigat&oacute;rios.</p>
 
-<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="1" class="text"/>
-<label for="author">Nome <?php if ($req) echo "*"; ?></label><br />
-
-<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="2" class="text"/>
-<label for="email">Email (n&atilde;o ser&aacute; publicado) <?php if ($req) echo "*"; ?></label><br />
-
-<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" class="text"/>
-<label for="url">Site</label><br />
-
-<?php endif; ?>
-
-<!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
-
-<textarea name="comment" id="comment" cols="50" rows="7" tabindex="4" class="text"></textarea><br />
-
-<input name="submit" type="submit" id="submit" tabindex="5" value="Enviar Coment&aacute;rio" class="button"/>
-<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
-<?php do_action('comment_form', $post->ID); ?>
-<p>(*)campos obrigat&oacute;rios.</p>
+</fieldset>
 </form>
 
 <?php endif; // If registration required and not logged in ?>

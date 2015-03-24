@@ -261,7 +261,7 @@ function wp_custom_breadcrumbs() {
       if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
  
     } elseif ( is_tag() ) {
-      echo $before . 'Posts tagged "' . single_tag_title('', false) . '"' . $after;
+      echo $before . 'TAG\'S &raquo ' . single_tag_title('', false) . '' . $after;
  
     } elseif ( is_author() ) {
        global $author;
