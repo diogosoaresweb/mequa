@@ -201,7 +201,7 @@ Resoluções:
 	color: #FFFFFF;
 }
 
- .sobre-juliana .block.full .socialMedia li a:hover{
+ .sobre-juliana .socialMedia li a:hover{
 	background: #666666;
  }
 /*======INTERNAS - FIM====*/   
@@ -945,52 +945,52 @@ Resoluções:
    }
    /*---------SOBRE JULIANA MELO-----*/
    
-   .sobre-juliana .block.full .photo {
+   .sobre-juliana .photo {
 	width: 100%;
 	margin: 0px 0 20px 0;
 	height: auto;
 	}
 	
-	.sobre-juliana .block.full .photo {
+	.sobre-juliana .photo {
 	max-width: 100%;
 	height: auto;
 	}
 	
-	.sobre-juliana .block.full .text{
+	.sobre-juliana .text{
 	font-size: 14px;
 	}
 	
-.sobre-juliana .block.full h2 {
+.sobre-juliana h2 {
   font-size: 18px;
   margin: 40px 0 20px 0;
 }
 
-.sobre-juliana .block.full .socialMedia li {
+.sobre-juliana .socialMedia li {
   margin: 40px 2% 40px 2%;
 }
 
-.sobre-juliana .block.full .socialMedia li a{
+.sobre-juliana .socialMedia li a{
   height: auto;
   min-height: inherit;
 }
 
-.sobre-juliana .block.full .socialMedia li a:after{
+.sobre-juliana .socialMedia li a:after{
   display: none;
 }
 
-.sobre-juliana .block.full .socialMedia li h3{
+.sobre-juliana .socialMedia li h3{
     font-size: 15px;
     padding: 15px 20px 15px 20px;
    }
    
-   .sobre-juliana .block.full .socialMedia li p{
+   .sobre-juliana .socialMedia li p{
     font-size: 13px;
     padding: 10px 20px 20px 20px;
    }
 	
 /*---------SOBRE JULIANA MELO - FIM-----*/	
 
-   .sobre-juliana .block.full .socialMedia{
+   .sobre-juliana .socialMedia{
 	width: 100%;
 	margin:0;
    }

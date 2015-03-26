@@ -1922,7 +1922,7 @@ Version: 1.0
     padding: 15px;
    }
    
-   .sobre-juliana .block.full .photo{
+   .sobre-juliana .photo{
     position: relative;
     display: block;
     width: auto;
@@ -1932,14 +1932,14 @@ Version: 1.0
     width: 60%;
    }
    
-   .sobre-juliana .block.full .photo img{
+   .sobre-juliana .photo img{
     position: relative;
     display: block;
     max-width: 100%;
     height: auto;
    }
    
-   .sobre-juliana .block.full .text{
+   .sobre-juliana .text{
     position: relative;
     display: table;
     width: 100%;
@@ -1949,7 +1949,7 @@ Version: 1.0
    }
    
    
-   .sobre-juliana .block.full h2{
+   .sobre-juliana h2{
     position: relative;
     display: table;
     width: 100%;
@@ -1961,13 +1961,13 @@ Version: 1.0
    }
    
    
-   .sobre-juliana .block.full .gallery{
+   .sobre-juliana .gallery{
     margin: 0;
     display: table;
     width: 100%;
    }
    
-   .sobre-juliana .block.full .gallery li{
+   .sobre-juliana  .gallery li{
     position: relative;
     display: inline-block;
     float: left;
@@ -1976,7 +1976,7 @@ Version: 1.0
     min-height: 50px;
    }
    
-   .sobre-juliana .block.full .gallery li a{
+   .sobre-juliana  .gallery li a{
     position: relative;
     display: block;
     width: 100%;
@@ -1984,27 +1984,27 @@ Version: 1.0
     overflow: hidden;
    }
    
-   .sobre-juliana .block.full .gallery li a img{
+   .sobre-juliana .gallery li a img{
     position: relative;
     display: block;
     max-width: 100%;
     height: auto;
    }
    
-   .sobre-juliana .block.full .gallery li.last,
-   .sobre-juliana .block.full .gallery li:last-child{
+   .sobre-juliana  .gallery li.last,
+   .sobre-juliana .gallery li:last-child{
     margin-right: 0; 
    }
    
    
-   .sobre-juliana .block.full .socialMedia{
+   .sobre-juliana  .socialMedia{
     margin: 0;
     display: table;
     width: 70%;
     margin: 0 15% 0 15%;
    }
    
-   .sobre-juliana .block.full .socialMedia li{
+   .sobre-juliana .socialMedia li{
     position: relative;
     display: inline-block;
     float: left;
@@ -2012,14 +2012,14 @@ Version: 1.0
     margin: 80px 2% 80px 2%;
    }
    
-   .sobre-juliana .block.full .socialMedia li a{
+   .sobre-juliana .socialMedia li a{
     position: relative;
     display: block;
     background: #000000;
     min-height: 127px;
    }
    
-   .sobre-juliana .block.full .socialMedia li h3{
+   .sobre-juliana .socialMedia li h3{
     position: relative;
     display: block;
     color: #FFFFFF;
@@ -2028,7 +2028,7 @@ Version: 1.0
     padding: 20px 25px 20px 25px;
    }
    
-   .sobre-juliana .block.full .socialMedia li p{
+   .sobre-juliana .socialMedia li p{
     position: relative;
     display: block;
     color: #FFFFFF;
@@ -2036,7 +2036,7 @@ Version: 1.0
     font-weight: 100;
     padding: 15px 25px 0 25px;
    }
-   .sobre-juliana .block.full .socialMedia li a:after{
+   .sobre-juliana .socialMedia li a:after{
     position: absolute;
     display: block;
     z-index: 10;
@@ -2045,13 +2045,13 @@ Version: 1.0
     bottom: 25px;
    }
    
-   .sobre-juliana .block.full .socialMedia li.facebook a:after{
+   .sobre-juliana .socialMedia li.facebook a:after{
     width: 26px;
     height: 25px;
     background: url('images/img_all.png') -1279px 0 no-repeat;
    }
    
-   .sobre-juliana .block.full .socialMedia li.instagram a:after{
+   .sobre-juliana .socialMedia li.instagram a:after{
     width: 12px;
     height: 24px;
     background: url('images/img_all.png') -1329px 0 no-repeat;
