@@ -36,11 +36,33 @@ if (function_exists('register_sidebar'))
 	register_sidebar(array(
 		'name' => __( 'Widget Perfil - Container' ),
 		'id' => 'home-sidebar-profile',
-		'description' => __( 'Widget do Perdil do(a) Autor(a) do Portal' ),
+		'description' => __( 'Widget do Perfil do(a) Autor(a) do Portal' ),
 		'before_widget' => '<li id="%1$s" class="%2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
+	));
+        
+        
+         register_sidebar(array(
+		'name' => __( 'Widget TAGS' ),
+		'id' => 'sidebar-tags',
+		'description' => __( 'Widget sidebar para pagina de tags' ),
+		'before_widget' => '<li id="%1$s" class="%2$s">',
+		'after_widget' => '</li>',
+                'before_title' => '<div class="title centerBox"><h1>',
+		'after_title' => '</h1></div>',
+	));
+         
+         
+         register_sidebar(array(
+		'name' => __( 'Widget LEFT' ),
+		'id' => 'sidebar-left',
+		'description' => __( 'Widget sidebar Left' ),
+		'before_widget' => '<li id="%1$s" class="%2$s">',
+		'after_widget' => '</li>',
+                'before_title' => '<div class="title centerBox"><h1>',
+		'after_title' => '</h1></div>',
 	));
 
 

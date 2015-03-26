@@ -52,9 +52,7 @@
                     </div>
                     
                     <div class="coll block last free tags">
-                        <div class="title centerBox">
-                          <h1>TAG'S</h1>
-                        </div>
+                        
                         
                         <div class="">
                             <?php the_tags( '<ul><li> ', '</li><li>', '</li></ul>' ); ?> 

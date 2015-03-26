@@ -79,11 +79,22 @@
 	    </div>
 	    
 	    
-	    <div class="block sidebar">
+	    <div class="block sidebar tags">
 	       <div class="colls colls-1">
-                    <div class="block box">
-	       
-			   <?php dynamic_sidebar(); ?>
+                    <div class="block box layout-1">
+		     
+		  <ul>
+		     <?php
+			if ( is_active_sidebar( 'sidebar-tags' ) ) :
+                           dynamic_sidebar( 'sidebar-tags' );
+                           endif;
+                      ?>
+		  </ul>
+			    
+			    
+			   <?php // dynamic_sidebar(); ?>
+			   
+			   
 		     </div>
                  </div>    
 	       

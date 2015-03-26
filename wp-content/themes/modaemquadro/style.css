@@ -511,13 +511,21 @@ Version: 1.0
         display:block;
         min-height:100px;
   }
-  
+    .pages .content.two-columns-right{}
+   
+   .pages .content.two-columns-left .main,
+   .pages .content.two-columns-right .main{
+        width:70.9401709%;
+        float:left;
+   }
+   
    .pages .content.two-columns-right{}
    
    .pages .content.two-columns-right .main{
-    width:70.9401709%;
     margin-right:3.41880342%;
-    float:left;
+   }
+   .pages .content.two-columns-left .main{
+    margin-left:3.41880342%;
    }
    .pages .content .colls{
     position:relative;
@@ -526,6 +534,22 @@ Version: 1.0
     margin:0 0 40px 0;
    }
    
+   
+   .pages .content.two-columns-left .sidebar .box .widget_text ul{
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 15px;
+   }
+   .pages .content.two-columns-left .sidebar .box .widget_text ul li{
+    position: relative;
+    display: block;
+    margin: 10px 0 10px 0;
+   }
+   
+   .pages .content.two-columns-left .sidebar .box .widget_text ul li strong{
+    font-size: 16px;
+   }
    
    .pages .content .colls .block{
     position:relative;
@@ -557,10 +581,7 @@ Version: 1.0
       margin-right:0;
    }
    
-   
-   
-   
-   
+
    .pages .content.one-column .colls.colls-6{}
    .pages .content.one-column .colls.colls-6 > .block{
       width: 15.2421652%;
@@ -1025,6 +1046,13 @@ Version: 1.0
    }
    
    
+   .pages .content.two-columns-left .sidebar,
+   .pages .content.two-columns-right .sidebar{
+    width:25.6410256%;
+    float:left;
+    min-height:90px;
+   }
+   
    .pages .content.two-columns-right .sidebar{
     width:25.6410256%;
     float:left;
@@ -1347,11 +1375,11 @@ Version: 1.0
    }
    
    .pages .socialPosts .facebook .box .title h1{
-        background: url('images/img_all.png') -623px 0px no-repeat #FFFFFF;
+        background: url('images/img_all.png') 0px -90px no-repeat #FFFFFF;
    }
    
    .pages .socialPosts .instagram .box .title h1{
-        background: url('images/img_all.png') -623px -38px no-repeat #FFFFFF;
+        background: url('images/img_all.png') 0px -125px no-repeat #FFFFFF;
    }
    /*======CONTENT-FIM====*/
    
@@ -1887,6 +1915,280 @@ Version: 1.0
     padding-bottom: 10px;
    }
    /*------SIGLE POST - FIM-----*/
+   
+   /*---------SOBRE JULIANA MELO-----*/
+   
+   .sidebar.tags .box ul li{
+    padding: 15px;
+   }
+   
+   .sobre-juliana .block.full .photo{
+    position: relative;
+    display: block;
+    width: auto;
+    height: 330px;
+    margin: 50px 20% 80px 20%;
+    overflow: hidden;
+    width: 60%;
+   }
+   
+   .sobre-juliana .block.full .photo img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+   }
+   
+   .sobre-juliana .block.full .text{
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+   }
+   
+   
+   .sobre-juliana .block.full h2{
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 600;
+    margin: 70px 0 50px 0;
+   }
+   
+   
+   .sobre-juliana .block.full .gallery{
+    margin: 0;
+    display: table;
+    width: 100%;
+   }
+   
+   .sobre-juliana .block.full .gallery li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 31.0541311%;
+    margin-right: 3.41880342%;
+    min-height: 50px;
+   }
+   
+   .sobre-juliana .block.full .gallery li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   }
+   
+   .sobre-juliana .block.full .gallery li a img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+   }
+   
+   .sobre-juliana .block.full .gallery li.last,
+   .sobre-juliana .block.full .gallery li:last-child{
+    margin-right: 0; 
+   }
+   
+   
+   .sobre-juliana .block.full .socialMedia{
+    margin: 0;
+    display: table;
+    width: 70%;
+    margin: 0 15% 0 15%;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 46%;
+    margin: 80px 2% 80px 2%;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li a{
+    position: relative;
+    display: block;
+    background: #000000;
+    min-height: 127px;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li h3{
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px 20px 25px;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li p{
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 15px 25px 0 25px;
+   }
+   .sobre-juliana .block.full .socialMedia li a:after{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    content: "";
+    right: 25px;
+    bottom: 25px;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li.facebook a:after{
+    width: 26px;
+    height: 25px;
+    background: url('images/img_all.png') -1279px 0 no-repeat;
+   }
+   
+   .sobre-juliana .block.full .socialMedia li.instagram a:after{
+    width: 12px;
+    height: 24px;
+    background: url('images/img_all.png') -1329px 0 no-repeat;
+   }
+   
+   
+   /*-------CONTACTS---------*/
+   
+   .one-columns .contact{
+        position: relative;
+        display: table;
+        width: 70%;
+        margin: 0 15% 0 15%;
+   }
+   
+   .one-columns .contact .info{
+        position: relative;
+        display: block;
+        text-align: center;
+   }
+   
+   
+   .one-columns .contact .info .phone{
+        position: relative;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin: 40px 0 80px 0;
+   }
+   
+   .one-columns .contact .info .phone:before{
+        position: absolute;
+        display: block;
+        width: 28px;
+        height: 28px;
+        z-index: 10;
+        content: "";
+        background: url('images/img_all.png') -1370px 0px;
+        left: 50%;
+        top: -30px;
+        margin: 0 0 0 -14px;
+   }
+   
+   .one-columns .contact .info .mail{
+        position: relative;
+        display: block;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        margin: 40px 0 80px 0;
+   }
+   
+   .one-columns .contact .info .mail:before{
+        position: absolute;
+        display: block;
+        width: 28px;
+        height: 28px;
+        z-index: 10;
+        content: "";
+        background: url('images/img_all.png') -1410px 0px;
+        left: 50%;
+        top: -25px;
+        margin: 0 0 0 -14px;
+   }
+   
+   .one-columns .contact .wpcf7{
+    position: relative;
+    display: table;
+    width: 100%;
+   }
+   
+   .one-columns .contact .wpcf7 form{
+    position: relative;
+    display: block;
+    width: 100%;
+   }
+   .one-columns .contact .wpcf7 form p{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 15px 0 15px 0;
+   }
+   
+   .one-columns .contact .wpcf7 form input.wpcf7-text{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin: 7px 0 0 0;
+   }
+   
+   .one-columns .contact .wpcf7 form textarea{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin: 7px 0 0 0;
+   }
+   
+   .one-columns .contact .wpcf7 form .wpcf7-submit{
+    position: relative;
+    display: block;
+    width: 190px;
+    height: 40px;
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+    left: 50%;
+    margin: 20px 0 0 -95px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+   }
+   
+   
+   .yrc-name{
+    display: none !important;
+   }
+   
+   .pb-absolute{
+    top: -140px !important;
+   }
+   
+   .yrc-brand{
+    height: 0 !important;
+   }
+   .yrc-banner{
+    height: 0 !important;
+   }
+   
+   .tvModaEmQuadro{}
+  
+   /*-------CONTACTS - FIM---------*/
    /*=====================INTERNAS - FIM======================*/
    
    

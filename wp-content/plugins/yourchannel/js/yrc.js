@@ -407,7 +407,7 @@ jQuery(document).ready(function($){
 	};	
 	
 	YRC.template.loadMoreButton = function (more){
-		return '<li class="yrc-load-more-button yrc-button"><span>'+ YRC.template.num(more) +' '+ YRC.lang.more +'</span></li>';
+		return '<li class="yrc-load-more-button yrc-button"><span>LISTAR MAIS '+ YRC.template.num(more) +' VÍDEOS</span></li>';
 	};
 	
 	YRC.template.num = function( num ){

@@ -87,7 +87,7 @@
 		</li>
 		
 		<li class="item nav-1 last">
-		    <a href="<?php echo get_option('home');?>/tv-moda-em-quadro/" title="Home">TV</a>
+		    <a href="<?php echo get_option('home');?>/tv-moda-em-quadro/" title="Home">TV MEQ</a>
 		</li>
 		
 		

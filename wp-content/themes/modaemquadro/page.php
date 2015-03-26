@@ -1,27 +1,45 @@
 <?php
 /**
-Template Name: pageExemple */
-get_header();
+Template Name: Páginas */
 ?>
 
-<div class="rContainer">
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php get_header(); ?>
 
-<div class="headerPage">
-   <div class="contentMain">
-    <h2><?php the_title(); ?></h2>
+
+<div class="pages inside">   
+   <div class="rContainer">
+      <div class="breadcrumbs">
+	 <?php wp_custom_breadcrumbs(); ?>
+      </div>
    </div>
-</div>
- 
-<div class="pageContent page_content the_content">
-  <div class="contentMain">
-     <?php the_content(); ?>
-  </div>
-</div>
-   <?php endwhile; ?>
-  <?php endif; ?>
+   
+   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+   
+   <div class="headPage styleDefault">
+      <div class="rContainer">
+	 <div class="title">
+            <?php if (is_search()) { echo '<h1>PESQUISA</h1>'; } else { ?>
+	  <h1>
+            <?php  echo get_the_title(); ?>   
+	  </h1>
+          <? } ?>
+	 </div>
+	 <div class="info"></div>
+      </div>
+   </div>
+    
+    <div class="content one-columns">
+        <div class="rContainer">
+            <div class="block full content">
+                <?php the_content(); ?>
+            </div>
+        </div>
+    </div>
+                
 
+    <?php endwhile; ?>
+  <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
