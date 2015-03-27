@@ -31,7 +31,7 @@
 		<?php
 		if (have_posts()) : while (have_posts()) : the_post();
 		  
-		  if ( has_post_thumbnail() ): //Se existe uma imagem destacada inserida no post
+		  //if ( has_post_thumbnail() ): //Se existe uma imagem destacada inserida no post
                     
 		    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
 		    
@@ -39,7 +39,15 @@
 		    
                     <li class="coll block post">
 		     <a class="img" href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-			<?php the_post_thumbnail( 'thumbnail' ); ?>
+			
+			<?php
+			if ( has_post_thumbnail() ):
+			the_post_thumbnail( 'thumbnail' );
+			
+			 else:
+			 echo '<img src="'.get_template_directory_uri().'/images/no-image.png" alt="SEM IMAGEM" border="0" />';
+			 endif;
+			 ?>
 		     </a>
 		     <a class="title" href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
 			<h2><?php the_title(); ?></h2>
@@ -51,7 +59,7 @@
 		     
                     </li>
 		    
-		    <?php  endif; ?>
+		    <?php  // endif; ?>
 
 		
 		<?php endwhile; ?>

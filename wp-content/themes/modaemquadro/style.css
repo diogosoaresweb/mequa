@@ -989,8 +989,9 @@ Version: 1.0
     position:relative;
     display: inline-block;
     float: left;
-    width: 46%;
+    width: 46% !important;
     margin-right: 4%;
+    height: auto !important;
    }
    
    .pages .content .block.box.layout-2 h2.text{
@@ -1773,7 +1774,13 @@ Version: 1.0
     background: url('images/img_all.png') -1190px 0;
    }
    
-   
+   .single .pages .contentPost iframe{
+    width: 100% !important;
+    min-height: 400px !important;
+   }
+   .single .pages .contentPost img{
+    max-width: 100%;
+   }
    .single .pages .contentPost{
     position: relative;
     display: table;
@@ -1926,7 +1933,7 @@ Version: 1.0
     position: relative;
     display: block;
     width: auto;
-    height: 330px;
+    height: 460px;
     margin: 50px 20% 80px 20%;
     overflow: hidden;
     width: 60%;
@@ -2012,23 +2019,23 @@ Version: 1.0
     margin: 80px 2% 80px 2%;
    }
    
-   .sobre-juliana .socialMedia li a{
+   .sobre-juliana .socialMedia li a.link{
     position: relative;
     display: block;
     background: #000000;
     min-height: 127px;
    }
    
-   .sobre-juliana .socialMedia li h3{
+   .sobre-juliana .socialMedia li a .mediaTitle{
     position: relative;
     display: block;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
-    padding: 20px 25px 20px 25px;
+    padding: 10px 25px 10px 25px;
    }
    
-   .sobre-juliana .socialMedia li p{
+   .sobre-juliana .socialMedia li a .user{
     position: relative;
     display: block;
     color: #FFFFFF;
@@ -2036,7 +2043,7 @@ Version: 1.0
     font-weight: 100;
     padding: 15px 25px 0 25px;
    }
-   .sobre-juliana .socialMedia li a:after{
+   .sobre-juliana .socialMedia li .link:after{
     position: absolute;
     display: block;
     z-index: 10;
@@ -2045,13 +2052,13 @@ Version: 1.0
     bottom: 25px;
    }
    
-   .sobre-juliana .socialMedia li.facebook a:after{
+   .sobre-juliana .socialMedia li.facebook .link:after{
     width: 26px;
     height: 25px;
     background: url('images/img_all.png') -1279px 0 no-repeat;
    }
    
-   .sobre-juliana .socialMedia li.instagram a:after{
+   .sobre-juliana .socialMedia li.instagram .link:after{
     width: 12px;
     height: 24px;
     background: url('images/img_all.png') -1329px 0 no-repeat;

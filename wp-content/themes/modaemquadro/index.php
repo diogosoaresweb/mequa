@@ -61,7 +61,7 @@
 
                     
                     <div class="block first free layout-2">
-                        <?php categoryHome('layout-2','full-ultilidades', '2', 'secondary'); ?>
+                        <?php categoryHome('layout-2','full-utilidades', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block free layout-2">
@@ -69,7 +69,7 @@
                     </div>
                     
                     <div class="block last free layout-2">
-                        <?php categoryHome('layout-2','super-trend', '2', 'secondary'); ?>
+                        <?php categoryHome('layout-2','super-trends', '2', 'secondary'); ?>
                     </div>
                 </div>
                 
@@ -190,14 +190,14 @@
     
      <div class="content one-column">
         <div class="rContainer">
-            <div class="colls coll-1 line-1">
+            <!--<div class="colls coll-1 line-1">
                 <div class="block free layout-1 videos">
                     <?php categoryHome('videos','videos', '6', 'colls colls-6'); ?>
                 </div>
             </div>
+            -->
             
-            
-            <div class="colls colls-2 line-2 socialPosts">
+            <!--<div class="colls colls-2 line-2 socialPosts">
                 <div class="coll block first facebook">
                     <div class="block box">
                         <div class="title centerBox">
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
               
               
               

@@ -45,8 +45,8 @@
 		<li class="facebook"><a href="https://facebook.com/ModaEmQuadro" target="_blank" title="Facebook Moda Em Quadro"></a></li>
 		<li class="instagram"><a href="https://instagram.com/modaemquadro/" target="_blank" title="Instagram Moda Em Quadro"></a></li>
 		<li class="youtube"><a href="https://www.youtube.com/user/Simplerrimo" target="_blank" title="Youtube Moda Em Quadro"></a></li>
-		<li class="twitter"><a href="javascript:;" title="Twitter Moda Em Quadro"></a></li>
-		<li class="gplus"><a href="javascript:;" title="Google Plus Moda Em Quadro"></a></li>
+		<!--<li class="twitter"><a href="javascript:;" title="Twitter Moda Em Quadro"></a></li>
+		<li class="gplus"><a href="javascript:;" title="Google Plus Moda Em Quadro"></a></li>-->
 	    </ul>
 	    
 	    
@@ -95,7 +95,7 @@
 		    <a href="javascript:;" title="Home">MAIS</a>
 		    <ul class="subNav right">
 			<li class="item nav-2 first">
-			    <a href="<?php echo get_option('home');?>/sobre-juliana-melo/" title="Sobre Nós">SOBRE NÓS</a>
+			    <a href="<?php echo get_option('home');?>/sobre-juliana-melo/" title="Sobre Nós">SOBRE A JÚ</a>
 			</li>
 			<li class="item nav-2">
 			    <a href="<?php echo get_option('home');?>/category/videos/" title="Vídeos">VÍDEOS</a>
@@ -110,7 +110,7 @@
 			    <a href="<?php echo get_option('home');?>/category/especial/" title="Especial">ESPECIAL</a>
 			</li>
 			<li class="item nav-2">
-			    <a href="<?php echo get_option('home');?>/category/full-ultilidades/" title="Ful Ultilidades">FUL ULTILIDADES</a>
+			    <a href="<?php echo get_option('home');?>/category/full-utilidades/" title="Ful Ultilidades">FUL UTILIDADES</a>
 			</li>
 			<li class="item nav-2">
 			    <a href="<?php echo get_option('home');?>/category/super-trends/" title="Super Trends">SUPER TRENDS</a>

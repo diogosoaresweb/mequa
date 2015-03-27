@@ -166,6 +166,8 @@ Resoluções:
 
 .pages .content.two-columns-right .colls.colls-2.line-1 > .block{
 	height:525px;
+	display: table !important;
+	padding-bottom: 20px;
 }
 
 .pages .content.two-columns-right .colls.colls-2.line-1 > .block .more{
@@ -196,12 +198,12 @@ Resoluções:
    
 /*---NAV SIDEBAR - FIM ----*/
 
-.single .pages .tags ul li a:hover{
+.single .pages .tags ul li .link:hover{
 	background: #000000;
 	color: #FFFFFF;
 }
 
- .sobre-juliana .socialMedia li a:hover{
+ .sobre-juliana .socialMedia li .link:hover{
 	background: #666666;
  }
 /*======INTERNAS - FIM====*/   
@@ -965,35 +967,37 @@ Resoluções:
   margin: 40px 0 20px 0;
 }
 
+.sobre-juliana .socialMedia{
+	width: 100%;
+	margin:0;
+   }
+   
 .sobre-juliana .socialMedia li {
   margin: 40px 2% 40px 2%;
 }
 
-.sobre-juliana .socialMedia li a{
+.sobre-juliana .socialMedia li .link{
   height: auto;
   min-height: inherit;
 }
 
-.sobre-juliana .socialMedia li a:after{
-  display: none;
+.sobre-juliana .socialMedia li .link:after{
+ 
 }
 
-.sobre-juliana .socialMedia li h3{
+.sobre-juliana .socialMedia li .mediaTitle{
     font-size: 15px;
     padding: 15px 20px 15px 20px;
    }
    
-   .sobre-juliana .socialMedia li p{
+   .sobre-juliana .socialMedia li .user{
     font-size: 13px;
     padding: 10px 20px 20px 20px;
    }
 	
 /*---------SOBRE JULIANA MELO - FIM-----*/	
 
-   .sobre-juliana .socialMedia{
-	width: 100%;
-	margin:0;
-   }
+   
 
 /*======INTERNAS - FIM====*/
 
@@ -1079,6 +1083,11 @@ Resoluções:
 /*max SmartPhone*/
 @media only screen and (max-width:479px){
         
+	.sobre-juliana .socialMedia li {
+  width: 100% !important;
+  margin: 10px 0 10px 0 !important;
+}
+
         
 /*=========HEADER=======*/
     
