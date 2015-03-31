@@ -18,13 +18,13 @@
                     <div class="block first free layout-1">
                         
                         <?php
-                            categoryHome('layout-1','eu-recomendo', '3', '');
+                            categoryHome('layout-1','super-trends', '3', '');
                         ?>
                         
                     </div>
                     <div class="block last free layout-1">
                         
-                        <?php categoryHome('layout-1','make-em-quadro', '3', ''); ?>
+                        <?php categoryHome('layout-1','moda-das-estrelas', '3', ''); ?>
                         
                     </div>
                 </div>
@@ -65,11 +65,11 @@
                     </div>
                     
                     <div class="block free layout-2">
-                        <?php categoryHome('layout-2','moda-das-estrelas', '2', 'secondary'); ?>
+                        <?php categoryHome('layout-2','make-em-quadro', '2', 'secondary'); ?>
                     </div>
                     
                     <div class="block last free layout-2">
-                        <?php categoryHome('layout-2','super-trends', '2', 'secondary'); ?>
+                        <?php categoryHome('layout-2','eu-recomendo', '2', 'secondary'); ?>
                     </div>
                 </div>
                 
