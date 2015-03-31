@@ -190,21 +190,21 @@
     
      <div class="content one-column">
         <div class="rContainer">
-            <!--<div class="colls coll-1 line-1">
+            <div class="colls coll-1 line-1">
                 <div class="block free layout-1 videos">
                     <?php categoryHome('videos','videos', '6', 'colls colls-6'); ?>
                 </div>
             </div>
-            -->
             
-            <!--<div class="colls colls-2 line-2 socialPosts">
+            
+            <div class="colls colls-2 line-2 socialPosts">
                 <div class="coll block first facebook">
                     <div class="block box">
                         <div class="title centerBox">
                             <h1><span>Facebook</span></h1>
                         </div>
                         
-                        <?php// echo do_shortcode( '[efb_likebox fanpage_url="https://www.facebook.com/pages/modaemquadro" fb_appid="" box_width="250" box_height="230" locale="pt_BR" responsive="1" colorscheme="light" show_faces="1" show_header="0" show_stream="0" show_border="0"]' ); ?>
+                        <?php echo do_shortcode( '[efb_likebox fanpage_url="https://www.facebook.com/pages/modaemquadro" fb_appid="" box_width="250" box_height="300" locale="pt_BR" responsive="1" colorscheme="light" show_faces="1" show_header="0" show_stream="0" show_border="0"]' ); ?>
                         
                     </div>
                 </div>
@@ -213,9 +213,13 @@
                         <div class="title centerBox">
                             <h1><span>Instagram</span></h1>
                         </div>
+                        
+                        <?php echo do_shortcode("[instagram-feed id='462808921']"); ?>
+                        
+                        
                     </div>
                 </div>
-            </div>-->
+            </div>
               
               
               

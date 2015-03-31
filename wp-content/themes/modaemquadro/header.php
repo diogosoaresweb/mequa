@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title><?php bloginfo('name'); ?></title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; <?php bloginfo('charset'); ?>" />
 <link rel="stylesheet" id="main_css-css" href="<?php bloginfo('stylesheet_url'); ?>" media="all" type="text/css" />

@@ -78,7 +78,8 @@
 	       
 		  
 		  <div class="navPages" id="nav-below">
-		     <p><?php posts_nav_link(' &#8212; ', __('Pr&oacute;xima p&aacute;gina &raquo;'), __('&laquo; P&aacute;gina anterior')); ?></p>
+		     <p><?php posts_nav_link(' &#8212; ', __('LISTAR MENOS'), __('LISTAR MAIS')); ?></p>
+		     <!--<p><?php // posts_nav_link(' &#8212; ', __('Pr&oacute;xima p&aacute;gina &raquo;'), __('&laquo; P&aacute;gina anterior')); ?></p>-->
 		  </div>
 		 
 		 

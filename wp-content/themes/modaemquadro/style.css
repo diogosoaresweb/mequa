@@ -1497,8 +1497,8 @@ Version: 1.0
   display: block;
   max-height: 100%;
   width: auto;
-  right: 0;
-  margin: 0 0 0 -50%;
+/*  right: 0;
+  margin: 0 0 0 -50%;*/
   
    }
    .widget_simpleimage p:not(.simple-image){
@@ -1780,6 +1780,7 @@ Version: 1.0
    }
    .single .pages .contentPost img{
     max-width: 100%;
+    height: auto;
    }
    .single .pages .contentPost{
     position: relative;
@@ -2142,24 +2143,28 @@ Version: 1.0
     width: 100%;
     margin: 15px 0 15px 0;
    }
-   
-   .one-columns .contact .wpcf7 form input.wpcf7-text{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 35px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    margin: 7px 0 0 0;
-   }
-   
+   .one-columns .contact .wpcf7 form input.wpcf7-text,
    .one-columns .contact .wpcf7 form textarea{
     position: relative;
     display: block;
-    width: 100%;
+    width: 96%;
+    margin: 7px 0 0 0;
+    padding: 0 2% 0 2%;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
     background: #FFFFFF;
     border: 1px solid #000000;
-    margin: 7px 0 0 0;
+   }
+   
+   
+   .one-columns .contact .wpcf7 form input.wpcf7-text{
+    height: 35px;
+   }
+   
+   .one-columns .contact .wpcf7 form textarea{
+    padding-top: 5px;
+    padding-bottom: 5px;
    }
    
    .one-columns .contact .wpcf7 form .wpcf7-submit{
@@ -2195,6 +2200,25 @@ Version: 1.0
    
    .tvModaEmQuadro{}
   
+  
+  .contentPost pre{
+    white-space: normal !important;
+  }
+  pre{
+   white-space: normal !important; 
+  }
+  
+  
+    .navPages  p a{
+    position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  background: #444444;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  }
    /*-------CONTACTS - FIM---------*/
    /*=====================INTERNAS - FIM======================*/
    
